@@ -1,0 +1,99 @@
+//  xx-small, x-small, small, medium, large, x-large, xx-large.
+
+// web-h1-font
+.h1-font {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 34px;
+  line-height: 48px;
+  color: #28323c;
+}
+
+// web-h1-font
+.h2-font {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 24px;
+  color: #28323c;
+}
+
+// web-h1-font адаптирующийся в h1-font
+.h2-font-h1 {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 24px;
+  color: #28323c;
+
+  @media screen and (min-width: 576px) {
+    font-size: 34px;
+    line-height: 48px;
+  }
+}
+
+// web-normal-font
+.md-font {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 24px;
+  color: #28323c;
+}
+
+// web-small-font
+.sm-font {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 13px;
+  line-height: 24px;
+  color: #28323c;
+}
+
+// web-small-font
+// sm-font  адаптирущийся в md-font
+.sm-font-md {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 13px;
+  line-height: 24px;
+  color: #28323c;
+
+  @media screen and (min-width: 576px) {
+    font-size: 16px;
+  }
+}
+
+// web-very-small-font
+.x-sm-font {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-family: Gerbera;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 11px;
+  line-height: 24px;
+  color: #28323c;
+}
+
+// web-very-small-font
+// x-sm-font адаптирущийся в sm-font
+.x-sm-font-sm {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-family: Gerbera;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 11px;
+  line-height: 24px;
+  color: #28323c;
+
+  @media screen and (min-width: 576px) {
+    font-size: 13px;
+    line-height: 24px;
+  }
+}
