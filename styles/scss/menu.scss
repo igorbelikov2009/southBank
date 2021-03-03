@@ -1,0 +1,97 @@
+.menu {
+  background: rgba(230, 240, 250, 0.75);
+  display: none;
+
+  @media screen and (min-width: 767px) {
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: block;
+    width: 80px;
+    height: 100vh;
+    padding: 24px 28px;
+  }
+
+  @media screen and (min-width: 1299px) {
+    width: 355px;
+    padding: 24px 28px;
+  }
+
+  &__logotype-wide {
+    display: none;
+
+    @media screen and (min-width: 1299px) {
+      display: block;
+      margin-bottom: 50px;
+    }
+  }
+
+  &__logotype-small {
+    margin-bottom: 50px;
+
+    @media screen and (min-width: 1299px) {
+      display: none;
+    }
+  }
+}
+
+.menu-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 34px;
+  text-decoration: none;
+
+  @media screen and (min-width: 1024px) {
+    margin-bottom: 24px;
+  }
+
+  &__icon {
+    margin-right: 24px;
+
+    @media screen and (min-width: 1024px) {
+    }
+  }
+
+  &__label {
+    display: none;
+    color: #78828c;
+
+    @media screen and (min-width: 1299px) {
+      display: block;
+    }
+  }
+}
+
+.sub-header {
+  visibility: hidden;
+  display: block;
+  width: 100%;
+  margin-left: 47px;
+  margin-bottom: 18px;
+  margin-top: 58px;
+  color: #b5bdc8;
+  text-decoration: none;
+
+  @media screen and (min-width: 1299px) {
+    visibility: visible;
+    margin-top: 52px;
+  }
+}
+
+@media screen and (min-width: 375px) {
+}
+
+@media screen and (min-width: 576px) {
+}
+
+@media screen and (min-width: 767px) {
+}
+
+@media screen and (min-width: 1024px) {
+}
+
+@media screen and (min-width: 1299px) {
+}
+
+@media screen and (min-width: 1440px) {
+}
