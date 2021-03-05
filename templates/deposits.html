@@ -2,11 +2,12 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <link rel="stylesheet" href="../styles/css/reset.css" />
     <link rel="stylesheet" href="../styles/css/general.css" />
     <link rel="stylesheet" href="../styles/css/grids.css" />
-    <link rel="stylesheet" href="../styles/css/reset.css" />
     <link rel="stylesheet" href="../styles/css/typography.css" />
-    <link rel="stylesheet" href="../styles/css/southernDeposits.css" />
+    <link rel="stylesheet" href="../styles/css/headerLocationFooter.css" />
+    <link rel="stylesheet" href="../styles/css/deposits.css" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
@@ -24,54 +25,84 @@
             </div>
             <img
               class="header__logo"
-              src="../assets/logotype/southernMain/logotypeSouthern.svg"
+              src="../assets/logotype/logotypeSouthern.svg"
               alt=""
             />
           </div>
 
-          <!-- поле выбора  -->
-          <form
-            class="header__select select select_header"
-            action=""
-            method="post"
-          >
-            <label class="select__title-header sm-font" for="">
-              <select class="select__list-header sm-font" name="">
-                <option class="select__item-header sm-font" value="">
-                  Частным лицам
-                </option>
-                <option class="select__item-header sm-font" value="">
-                  Кредиты
-                </option>
-                <option class="select__item-header sm-font" value="">
-                  Ипотека
-                </option>
-                <option class="select__item-header sm-font" value="">
-                  Кассовое обслуживание
-                </option>
-                <option class="select__item-header sm-font" value="">
-                  Вклады
-                </option>
-                <option class="select__item-header sm-font" value="">
-                  Денежные переводы
-                </option>
-              </select>
-            </label>
-          </form>
-          <!-- поле выбора  -->
+          <!-- drop-down Выпадающее меню. -->
+          <div class="header__hidden">
+            <div class="drop-down">
+              <button class="header__drop-btn drop-down__button">
+                Частным лицам
+              </button>
+              <div class="drop-down__content">
+                <a class="header__link drop-down__link" href="#"
+                  >Кредитование</a
+                >
+                <a class="header__link drop-down__link" href="#"
+                  >Денежные переводы</a
+                >
+                <a class="header__link drop-down__link" href="#"
+                  >Сейфовые ячейки</a
+                >
 
-          <a class="header__link header__link_nav sm-font" href="">Бизнесу</a>
-          <a class="header__link header__link_nav sm-font" href="">О банке</a>
-          <a class="header__link header__link_nav sm-font" href="">Новости</a>
-          <a class="header__link header__link_nav sm-font" href=""
-            >Офисы и отделения</a
-          >
+                <a class="header__link drop-down__link" href="#">Ипотека</a>
 
+                <a class="header__link drop-down__link" href="#">Вклады</a>
+              </div>
+            </div>
+          </div>
+          <!-- drop-down Выпадающее меню. -->
+
+          <!-- drop-down Выпадающее меню. -->
+          <div class="header__hidden">
+            <div class="drop-down">
+              <button class="header__drop-btn drop-down__button">
+                Бизнесу
+              </button>
+              <div class="drop-down__content">
+                <a class="header__link drop-down__link" href="#"
+                  >Кредиты бизнесу</a
+                >
+                <a class="header__link drop-down__link" href="#"
+                  >Зарплатные проекты</a
+                >
+                <a class="header__link drop-down__link" href="#"
+                  >Тарифы для юр. лиц</a
+                >
+                <a class="header__link drop-down__link" href="#"
+                  >Банк - клиент</a
+                >
+                <a class="header__link drop-down__link" href="#">Гарантии</a>
+              </div>
+            </div>
+          </div>
+          <!-- drop-down Выпадающее меню. -->
+
+          <!-- drop-down Выпадающее меню. -->
+          <div class="header__hidden">
+            <div class="drop-down">
+              <button class="header__drop-btn drop-down__button">
+                О банке
+              </button>
+              <div class="drop-down__content">
+                <a class="header__link drop-down__link" href="#"
+                  >Офисы и отделения</a
+                >
+                <a class="header__link drop-down__link" href="#">Реквизиты</a>
+              </div>
+            </div>
+          </div>
+          <!-- drop-down Выпадающее меню. -->
+
+          <a class="header__hidden header__link" href="">Новости</a>
+          <a class="header__hidden header__link" href="">Офисы и отделения</a>
           <div class="header__authorization">
             <form class="header__form-search" action="">
               <img
                 class="header__icon header__icon_search"
-                src="../assets/icons/southernMain/searchIcon.svg"
+                src="../assets/icons/searchIcon.svg"
                 alt=""
               />
             </form>
@@ -79,10 +110,10 @@
             <a class="header__link header__link_login sm-font" href="">
               <img
                 class="header__icon header__icon_login"
-                src="../assets/icons/southernMain/userIcon.svg"
+                src="../assets/icons/userIcon.svg"
                 alt=""
               />
-              <div class="header__login sm-font">Личный кабинет</div>
+              <p class="header__login sm-font">Личный кабинет</p>
             </a>
           </div>
         </div>
@@ -92,16 +123,14 @@
       <!-- top-block -->
       <section
         class="top-block"
-        style="
-          background-image: url(../assets/images/southernMain/southernMortgage.jpg);
-        "
+        style="background-image: url(../assets/images/main/mortgage.jpg"
       >
         <h1 class="top-block__heading">
           Вклады и
           <span class="top-block__heading_span">инвестиции</span>
         </h1>
 
-        <form class="top-block__buttons" action="">
+        <form class="top-block__button-container" action="">
           <button class="tertiary-button">Подобрать вклад</button>
         </form>
       </section>
@@ -110,9 +139,9 @@
       <!-- spot -->
       <section class="spot">
         <div class="spot__nav">
-          <p class="spot__nav-link sm-font">Главная</p>
-          <p class="spot__nav-link sm-font">Частным лицам</p>
-          <p class="spot__nav-item sm-font">Вклады</p>
+          <p class="spot__link">Главная</p>
+          <p class="spot__link">Частным лицам</p>
+          <p class="spot__link">Вклады</p>
         </div>
       </section>
       <!-- spot -->
@@ -122,137 +151,129 @@
         <div class="deposits__row">
           <img
             class="deposits__image"
-            src="../assets/images/southernDeposits/southernDeposits01.jpg"
+            src="../assets/images/deposits/flower.jpg"
             alt=""
           />
           <div class="deposits__contribution">
-            <p class="deposits__rate h1-font">Накопительный счёт “Копилка”</p>
-            <p class="deposits__clarification md-font">
+            <p class="deposits__rate">Накопительный счёт “Копилка”</p>
+            <p class="deposits__clarification">
               С начислением на ежедневный остаток
             </p>
             <div class="deposits__description">
               <div class="deposits__sector">
-                <p class="deposits__title sm-font">Сумма на счёте</p>
-                <p class="deposits__item md-font">Не ограничена</p>
+                <p class="deposits__title">Сумма на счёте</p>
+                <p class="deposits__item">Не ограничена</p>
               </div>
               <div class="deposits__sector">
-                <p class="deposits__title sm-font">Срок</p>
-                <p class="deposits__item md-font">бессрочный</p>
+                <p class="deposits__title">Срок</p>
+                <p class="deposits__item">бессрочный</p>
               </div>
               <div class="deposits__sector">
-                <p class="deposits__title sm-font">Ставка</p>
-                <p class="deposits__item md-font">до 7 %</p>
+                <p class="deposits__title">Ставка</p>
+                <p class="deposits__item">до 7 %</p>
               </div>
               <div class="deposits__sector">
-                <p class="deposits__title sm-font">
-                  Пополнение и снятие со счёта
-                </p>
-                <p class="deposits__item md-font">пополняемый, со снятием</p>
+                <p class="deposits__title">Пополнение и снятие со счёта</p>
+                <p class="deposits__item">пополняемый, со снятием</p>
               </div>
             </div>
-            <a class="deposits__link md-font" href="">Ставки и условия</a>
+            <a class="deposits__link" href="">Ставки и условия</a>
           </div>
         </div>
         <div class="deposits__row">
           <img
             class="deposits__image"
-            src="../assets/images/southernDeposits/southernDeposits02.jpg"
+            src="../assets/images/deposits/man.jpg"
             alt=""
           />
           <div class="deposits__contribution">
-            <p class="deposits__rate h1-font">Вклад “Время роста”</p>
-            <p class="deposits__clarification md-font">
+            <p class="deposits__rate">Вклад “Время роста”</p>
+            <p class="deposits__clarification">
               С минимальной ставкой на фиксированный срок
             </p>
             <div class="deposits__description">
               <div class="deposits__sector">
-                <p class="deposits__title sm-font">Сумма на счёте</p>
-                <p class="deposits__item md-font">от 30 000 руб</p>
+                <p class="deposits__title">Сумма на счёте</p>
+                <p class="deposits__item">от 30 000 руб</p>
               </div>
               <div class="deposits__sector">
-                <p class="deposits__title sm-font">Срок</p>
-                <p class="deposits__item md-font">180-731 дней</p>
+                <p class="deposits__title">Срок</p>
+                <p class="deposits__item">180-731 дней</p>
               </div>
               <div class="deposits__sector">
-                <p class="deposits__title sm-font">Ставка</p>
-                <p class="deposits__item md-font">до 6,5 %</p>
+                <p class="deposits__title">Ставка</p>
+                <p class="deposits__item">до 6,5 %</p>
               </div>
               <div class="deposits__sector">
-                <p class="deposits__title sm-font">
-                  Пополнение и снятие со счёта
-                </p>
-                <p class="deposits__item md-font">без пополнения и снятия</p>
+                <p class="deposits__title">Пополнение и снятие со счёта</p>
+                <p class="deposits__item">без пополнения и снятия</p>
               </div>
             </div>
-            <a class="deposits__link md-font" href="">Ставки и условия</a>
+            <a class="deposits__link" href="">Ставки и условия</a>
           </div>
         </div>
         <div class="deposits__row">
           <img
             class="deposits__image"
-            src="../assets/images/southernDeposits/southernDeposits03.jpg"
+            src="../assets/images/deposits/room.jpg"
             alt=""
           />
           <div class="deposits__contribution">
-            <p class="deposits__rate h1-font">Вклад “Комфортный”</p>
-            <p class="deposits__clarification md-font">
+            <p class="deposits__rate">Вклад “Комфортный”</p>
+            <p class="deposits__clarification">
               С начислением на ежедневный остаток
             </p>
             <div class="deposits__description">
               <div class="deposits__sector">
-                <p class="deposits__title sm-font">Сумма на счёте</p>
-                <p class="deposits__item md-font">от 10 000 руб</p>
+                <p class="deposits__title">Сумма на счёте</p>
+                <p class="deposits__item">от 10 000 руб</p>
               </div>
               <div class="deposits__sector">
-                <p class="deposits__title sm-font">Срок</p>
-                <p class="deposits__item md-font">90-360 дней</p>
+                <p class="deposits__title">Срок</p>
+                <p class="deposits__item">90-360 дней</p>
               </div>
               <div class="deposits__sector">
-                <p class="deposits__title sm-font">Ставка</p>
-                <p class="deposits__item md-font">до 5%</p>
+                <p class="deposits__title">Ставка</p>
+                <p class="deposits__item">до 5%</p>
               </div>
               <div class="deposits__sector">
-                <p class="deposits__title sm-font">
-                  Пополнение и снятие со счёта
-                </p>
-                <p class="deposits__item md-font">пополняемый, со снятием</p>
+                <p class="deposits__title">Пополнение и снятие со счёта</p>
+                <p class="deposits__item">пополняемый, со снятием</p>
               </div>
             </div>
-            <a class="deposits__link md-font" href="">Ставки и условия</a>
+            <a class="deposits__link" href="">Ставки и условия</a>
           </div>
         </div>
         <div class="deposits__row">
           <img
             class="deposits__image"
-            src="../assets/images/southernDeposits/southernDeposits04.jpg"
+            src="../assets/images/deposits/people.jpg"
             alt=""
           />
           <div class="deposits__contribution">
-            <p class="deposits__rate h1-font">Вклад “Пенсионный”</p>
-            <p class="deposits__clarification md-font">
+            <p class="deposits__rate">Вклад “Пенсионный”</p>
+            <p class="deposits__clarification">
               С минимальной ставкой на фиксированный срок
             </p>
             <div class="deposits__description">
               <div class="deposits__sector">
-                <p class="deposits__title sm-font">Сумма на счёте</p>
-                <p class="deposits__item md-font">от 10 000 рублей</p>
+                <p class="deposits__title">Сумма на счёте</p>
+                <p class="deposits__item">от 10 000 рублей</p>
               </div>
               <div class="deposits__sector">
-                <p class="deposits__title sm-font">Срок</p>
-                <p class="deposits__item md-font">180-360 дней</p>
+                <p class="deposits__title">Срок</p>
+                <p class="deposits__item">180-360 дней</p>
               </div>
               <div class="deposits__sector">
-                <p class="deposits__title sm-font">Ставка</p>
-                <p class="deposits__item md-font">до 7 %</p>
+                <p class="deposits__title">Ставка</p>
+                <p class="deposits__item">до 7 %</p>
               </div>
               <div class="deposits__sector">
-                <p class="deposits__title sm-font">
-                  Пополнение и снятие со счёта
-                </p>
-                <p class="deposits__item md-font">пополняемый,со снятием</p>
+                <p class="deposits__title">Пополнение и снятие со счёта</p>
+                <p class="deposits__item">пополняемый,со снятием</p>
               </div>
             </div>
-            <a class="deposits__link md-font" href="">Ставки и условия</a>
+            <a class="deposits__link" href="">Ставки и условия</a>
           </div>
         </div>
       </section>
@@ -265,18 +286,18 @@
             <div class="info__wrapper">
               <img
                 class="info__image"
-                src="../assets/images/southernDeposits/southernDeposits05.jpg"
+                src="../assets/images/deposits/schoolbag.jpg"
                 alt=""
               />
 
               <div class="info__for-depositors">
-                <p class="info__item-main md-font">Информация для вкладчиков</p>
-                <p class="info__item md-font">Где открыть вклад</p>
-                <p class="info__item md-font">Страхование вкладов</p>
-                <p class="info__item md-font">Налогооблажение вкладов</p>
-                <p class="info__item md-font">Частые вопросы</p>
-                <p class="info__item md-font">Тарифы</p>
-                <p class="info__item md-font">Справки и выписки</p>
+                <p class="info__subtitle">Информация для вкладчиков</p>
+                <a class="info__link" href="">Где открыть вклад</a>
+                <a class="info__link" href="">Страхование вкладов</a>
+                <a class="info__link" href="">Налогооблажение вкладов</a>
+                <a class="info__link" href="">Частые вопросы</a>
+                <a class="info__link" href="">Тарифы</a>
+                <a class="info__link" href="">Справки и выписки</a>
               </div>
             </div>
           </div>
@@ -285,19 +306,15 @@
             <div class="info__wrapper">
               <img
                 class="info__image"
-                src="../assets/images/southernDeposits/southernDeposits06.jpg"
+                src="../assets/images/deposits/money.jpg"
                 alt=""
               />
 
               <div class="info__for-depositors">
-                <p class="info__item-main md-font">Сбережения</p>
-                <p class="info__item md-font">Металлические счета</p>
-                <p class="info__item md-font">Монеты из драгоценных металлов</p>
-                <p class="info__item md-font">Сейфовые ячейки</p>
-                <p class="info__item md-font"></p>
-                <p class="info__item md-font"></p>
-                <p class="info__item md-font"></p>
-                <p class="info__item md-font"></p>
+                <p class="info__subtitle">Сбережения</p>
+                <a class="info__link" href="">Металлические счета</a>
+                <a class="info__link" href="">Монеты из драгоценных металлов</a>
+                <a class="info__link" href="">Сейфовые ячейки</a>
               </div>
             </div>
           </div>
@@ -307,85 +324,75 @@
 
       <!-- location -->
       <section class="location">
-        <h1 class="location__heading h2-font-h1">Офисы и отделения</h1>
+        <h1 class="location__heading">Офисы и отделения</h1>
         <div class="location__container">
           <div class="location__list">
             <div class="location__sector-select">
               <!-- поле выбора  -->
-              <form class="select select_city" action="" method="post">
-                <label class="select__title x-sm-font" for="">
-                  <select class="select__list" name="city">
-                    <option class="select__item" value="">Москва</option>
-                    <option class="select__item" value="">
-                      Санкт Петербург
-                    </option>
-                    <option class="select__item" value="">Казань</option>
-                    <option class="select__item" value="">
-                      Нижний Новгород
-                    </option>
-                    <option class="select__item" value="">Волгоград</option>
-                    <option class="select__item" value="">Камышин</option>
-                  </select>
-                </label>
-              </form>
+              <div class="location__city">
+                <form class="select" action="" method="post">
+                  <label>
+                    <select class="select__list" name="city">
+                      <option class="select__item" value="">Москва</option>
+                      <option class="select__item" value="">
+                        Санкт Петербург
+                      </option>
+                      <option class="select__item" value="">Казань</option>
+                      <option class="select__item" value="">
+                        Нижний Новгород
+                      </option>
+                      <option class="select__item" value="">Волгоград</option>
+                      <option class="select__item" value="">Камышин</option>
+                    </select>
+                  </label>
+                </form>
+              </div>
               <!-- поле выбора  -->
 
               <!-- поле выбора  -->
-              <form class="select select_area" action="" method="post">
-                <label class="select__title x-sm-font" for="">
-                  <select class="select__list" name="area">
-                    <option class="select__item" value="">Кузминки</option>
-                    <option class="select__item" value="">Некрасовка</option>
-                    <option class="select__item" value="">Люберцы</option>
-                    <option class="select__item" value="">Лефортово</option>
-                    <option class="select__item" value="">Дубровка</option>
-                    <option class="select__item" value="">
-                      Волгоградский проспект
-                    </option>
-                  </select>
-                </label>
-              </form>
+              <div class="location__area">
+                <form class="select" action="" method="post">
+                  <label>
+                    <select class="select__list" name="area">
+                      <option class="select__item" value="">Кузминки</option>
+                      <option class="select__item" value="">Некрасовка</option>
+                      <option class="select__item" value="">Люберцы</option>
+                      <option class="select__item" value="">Лефортово</option>
+                      <option class="select__item" value="">Дубровка</option>
+                      <option class="select__item" value="">
+                        Волгоградский проспект
+                      </option>
+                    </select>
+                  </label>
+                </form>
+              </div>
               <!-- поле выбора  -->
 
               <!-- переключатель secondary-radio -->
               <div class="location__radio secondary-radio">
-                <label
-                  class="secondary-radio__item secondary-radio__item_left"
-                  for=""
-                >
+                <label class="secondary-radio__item" for="">
                   <input
                     class="secondary-radio__field"
                     type="radio"
                     name="browser"
                     value="ie"
                   />
-                  <div
-                    class="secondary-radio__title secondary-radio__title_left sm-font"
-                  >
-                    Список
-                  </div>
+                  <div class="secondary-radio__title">Список</div>
                 </label>
 
-                <label
-                  class="secondary-radio__item secondary-radio__item_right"
-                  for=""
-                >
+                <label class="secondary-radio__item" for="">
                   <input
                     class="secondary-radio__field"
                     type="radio"
                     name="browser"
                     value="ie"
                   />
-                  <div
-                    class="secondary-radio__title secondary-radio__title_right sm-font"
-                  >
-                    Карта
-                  </div>
+                  <div class="secondary-radio__title">Карта</div>
                 </label>
               </div>
               <!-- переключатель secondary-radio -->
             </div>
-            <p class="location__address sm-font">
+            <p class="location__address">
               Партийный переулок д. 1, корп.7, стр. 2 <br />
               Ближайшие станции метро: <br />
               Добрынинская, Серпуховская <br />
@@ -393,7 +400,7 @@
               Режим работы офиса: <br />
               Пн - Чт: 9.30 - 17.30 Пт: 9.30 - 16.15
             </p>
-            <p class="location__address sm-font">
+            <p class="location__address">
               Большая Ордынка, д. 52 <br />
               Ближайшие станции метро: <br />
               Полянка, Третьяковская <br />
@@ -401,7 +408,7 @@
               Режим работы офиса: <br />
               Пн - Пт: 9.30 - 17.30
             </p>
-            <p class="location__address sm-font">
+            <p class="location__address">
               Ленинградский проспект, д. 80, корп. 16, 1 <br />
               этаж, 3 подъезд, пом I, оф.№№9-29 <br />
               Ближайшая станция метро: Сокол <br />
@@ -409,7 +416,7 @@
               Режим работы офиса: <br />
               Пн - Чт: 9.30 - 17.30 Пт: 9.30 - 16.15
             </p>
-            <p class="location__address sm-font">
+            <p class="location__address">
               тер. Внуково Аэропорт, д. 1, стр. 19 <br />
               (здание Почтово-грузового комплекса) <br />
               Телефон: +7(495) 956-17-34 <br />
@@ -418,13 +425,11 @@
             </p>
           </div>
           <div class="location__map-container">
-            <p class="location__map-title md-font">На карте</p>
+            <p class="location__map-title">На карте</p>
             <div class="location__map-block">
               <div
                 class="location__map"
-                style="
-                  background-image: url(../assets/images/southernGeneral/map.jpg);
-                "
+                style="background-image: url(../assets/images/general/map.jpg)"
               ></div>
             </div>
           </div>
@@ -557,22 +562,22 @@
               <div class="footer__social-groups">
                 <img
                   class="footer__icon"
-                  src="../assets/icons/southernMain/facebook01.svg"
+                  src="../assets/icons/facebook01.svg"
                   alt=""
                 />
                 <img
                   class="footer__icon"
-                  src="../assets/icons/southernMain/instagram01.svg"
+                  src="../assets/icons/instagram01.svg"
                   alt=""
                 />
                 <img
                   class="footer__icon"
-                  src="../assets/icons/southernMain/twitter01.svg"
+                  src="../assets/icons/twitter01.svg"
                   alt=""
                 />
                 <img
                   class="footer__icon"
-                  src="../assets/icons/southernMain/facebook01.svg"
+                  src="../assets/icons/whatsapp01.svg"
                   alt=""
                 />
               </div>

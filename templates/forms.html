@@ -1,0 +1,1632 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="../styles/css/general.css" />
+    <link rel="stylesheet" href="../styles/css/grids.css" />
+    <link rel="stylesheet" href="../styles/css/reset.css" />
+    <link rel="stylesheet" href="../styles/css/typography.css" />
+    <link rel="stylesheet" href="../styles/css/forms.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- main -->
+    <main class="main">
+      <article class="article">
+        <!-- Форма "form"-->
+        <section class="form">
+          <h1 id="forms" class="form__heading h1-font">
+            Форма
+            <a class="form__link h1-font" href="http://htmlbook.ru/html/form">
+              "form"</a
+            >
+          </h1>
+
+          <p class="form__description">
+            Тег <b>form</b> устанавливает форму на веб-странице. Форма
+            предназначена для обмена данными между пользователем и сервером.
+            Область применения форм не ограничена отправкой данных на сервер, с
+            помощью клиентских скриптов можно получить доступ к любому элементу
+            формы, изменять его и применять по своему усмотрению.
+          </p>
+
+          <p class="form__description">
+            Документ может содержать любое количество форм, но одновременно на
+            сервер может быть отправлена только одна форма. По этой причине
+            данные форм должны быть независимы друг от друга.
+          </p>
+
+          <p class="form__description">
+            Для отправки формы на сервер используется кнопка <b>Submit</b>, того
+            же можно добиться, если нажать клавишу <b>Enter</b> в пределах
+            формы. Если кнопка <b>Submit</b> отсутствует в форме, клавиша
+            <b>Enter</b> имитирует ее использование.
+          </p>
+
+          <p class="form__description">
+            Когда форма отправляется на сервер, управление данными передается
+            программе, заданной атрибутом <b>action</b> тега <b>form</b>.
+            <b>Action</b> задаёт адрес, <b>URL</b>, отправки формы.
+            Предварительно браузер подготавливает информацию в виде пары
+            «имя=значение», где имя определяется атрибутом name тега
+            <b>input</b>, а значение введено пользователем или установлено в
+            поле формы по умолчанию.
+          </p>
+
+          <p class="form__description">
+            <b>Method</b> задаёт метод отправки формы. Для отправки формы обычно
+            используют методы <b>get</b> или <b>post</b>. Если не указать
+            атрибут <b>method</b>, то будет использован <b>get</b>. Метод
+            <b>get</b> посылает данные формы в строке запроса, то есть они видны
+            в адресной строке браузера и следуют после знака вопроса.
+          </p>
+        </section>
+        <!-- Форма "form" -->
+
+        <!-- Типы форм -->
+        <section class="form">
+          <h1 id="type-input" class="form__heading h1-font">
+            <a class="form__link" href="http://htmlbook.ru/html/input/type"
+              >Типы</a
+            >
+            форм
+          </h1>
+          <p class="form__description">
+            Основной атрибут тега <b>input</b>, определяющий вид элемента —
+            type. Он позволяет задавать следующие элементы формы: текстовое поле
+            <b>(text)</b>, поле с паролем <b>(password)</b>, переключатель
+            (<b>radio)</b>, флажок <b>(checkbox)</b>, скрытое поле
+            <b>(hidden)</b>, кнопка <b>(button)</b>, кнопка для отправки формы
+            <b>(submit)</b>, кнопка для очистки формы <b>(reset)</b>, поле для
+            отправки файла <b>(file)</b> и кнопка с изображением <b>(image)</b>.
+            Для каждого элемента существует свой список атрибутов, которые
+            определяют его вид и характеристики. Кроме того, в
+            <b>HTML5</b> добавлено еще более десятка новых элементов.
+          </p>
+        </section>
+        <!-- Типы форм -->
+
+        <!-- Кнопки button -->
+        <section id="button" class="form">
+          <h1 class="form__description h1-font">
+            Кнопки
+            <a class="form__link" href="http://htmlbook.ru/html/button"
+              >button</a
+            >
+          </h1>
+
+          <p class="form__description">
+            Кнопку на веб-странице можно создать двумя способами — с помощью
+            тега <b>button</b> и тега <b>input</b>.
+          </p>
+          <p class="form__description">
+            Тег <b>input </b> для кнопки лучше не использовать. Оба тега
+            используют одинаковые
+            <a class="form__link" href="http://htmlbook.ru/html/input/type"
+              >типы.</a
+            >
+          </p>
+          <p class="form__description">
+            <b>button</b> предлагает расширенные возможности по созданию кнопок.
+            Например, на подобной кнопке можно размещать любые элементы HTML
+            включая изображения и таблицы.
+          </p>
+          <h2 class="form__subheading h2-font">button кнопка с картинкой</h2>
+
+          <!-- button кнопка с картинкой -->
+          <form class="form__container" action="">
+            <button class="form__button primary-button" type="submit">
+              button кнопка с картинкой
+              <img
+                class="primary-button_image"
+                src="../assets/images/tsarLanding/tsarLandingWomenCall.jpg"
+                alt=""
+              />
+            </button>
+          </form>
+          <!-- button кнопка с картинкой -->
+
+          <p class="form__description">
+            Для отправки данных на сервер предназначена специальная кнопка
+            <b>type="submit"</b> (кнопка "Enter" на клавиатуре). Её вид ничем не
+            отличается от обычных кнопок, но при нажатии на нее происходит
+            выполнение серверной программы, указанной атрибутом action тега
+            <b>form</b>.
+          </p>
+          <p class="form__description">
+            Эта программа, называемая еще обработчиком формы, получает данные,
+            введенные пользователем в полях формы, производит с ними необходимые
+            манипуляции, после чего возвращает результат в виде HTML-документа.
+            Что именно делает обработчик, зависит от автора сайта, например,
+            подобная технология применяется при создании опросов, форумов,
+            тестов и многих других вещей.
+          </p>
+          <p class="form__description">
+            Значениями атрибута type также могут быть <b>button</b> и
+            <b>reset</b>: <br />
+          </p>
+
+          <p class="form__description">
+            Кнопка <b>button</b> со значением <b>type="reset"</b> аналогично
+            <b>input type="reset"</b> сбрасывает значения полей формы к
+            изначальным.
+          </p>
+          <p class="form__description">
+            А вот значение <b>type="button"</b> избавит кнопку от всей
+            изначальной функциональности. То есть кнопка просто будет выглядеть
+            как кнопка, но ничего по умолчанию не делать. Это удобно, если вы
+            хотите сами добавить кнопке дополнительное действие с помощью
+            <b>JavaScript</b>.
+          </p>
+          <h2 class="form__subheading h2-font">Самая простая кнопка button</h2>
+
+          <!-- Самая простая кнопка button-->
+          <button class="form__button primary-button">
+            <p id="primary-button" class="primary-button_scale">
+              Самая простая кнопка button
+            </p>
+          </button>
+          <!-- Самая простая кнопка button-->
+
+          <!-- Две горизонтальные кнопки другой стилизации -->
+          <h2 class="form__subheading h2-font">
+            Две горизонтальные кнопки другой стилизации
+          </h2>
+          <form class="form__button second-buttons__buttons" action="">
+            <button class="second-buttons__button second-buttons__button_left">
+              <p class="second-buttons__button_scale">кнопка button</p>
+            </button>
+            <button class="second-buttons__button second-buttons__button_right">
+              <p class="second-buttons__button_scale">
+                я спрячусь при адаптации
+              </p>
+            </button>
+          </form>
+          <!-- Две горизонтальные кнопки другой стилизации -->
+
+          <!--  -->
+          <p class="form__description">
+            В сетке, да и так, все виды кнопок желательно помещать в
+            <b>div</b>, иначе левый падинг кнопки будет вылазить за левый край.
+            <br />
+            Если родителю ( <b>form</b> или <b>input</b>) задан
+            <b>display:flex;</b>, то потомку, возможно, следует задать
+            <b>flex: auto;</b> или <b>flex:none;</b> <br />
+          </p>
+        </section>
+        <!-- Кнопки button -->
+
+        <!-- Поля "input" -->
+        <section class="form">
+          <h1 id="inputs" class="form__heading h1-font">
+            Поля
+            <a class="form__link" href="http://htmlbook.ru/html/input"
+              >"input"</a
+            >
+          </h1>
+          <p class="form__description">
+            Тег input является одним из разносторонних элементов формы и
+            позволяет создавать разные элементы интерфейса и обеспечить
+            взаимодействие с пользователем. Главным образом input предназначен
+            для создания текстовых полей, различных кнопок, переключателей и
+            флажков. Хотя элемент input не требуется помещать внутрь контейнера
+            <b>form</b>, определяющего форму, но если введенные пользователем
+            данные должны быть отправлены на сервер, где их обрабатывает
+            серверная программа, то указывать <b>form</b> обязательно. То же
+            самое обстоит и в случае обработки данных с помощью клиентских
+            приложений, например, скриптов на языке <b>JavaScript</b>. Заготовки
+            различных полей <b>input</b> можно делать, не вкладывая их в
+            <b>form</b>, что бы в процессе работы можно было собирать множество
+            <b>input</b>ов в единый или в несколько <b>form</b>.
+          </p>
+        </section>
+        <!-- Поля "input" -->
+
+        <!-- policy-form -->
+        <section class="policy-form">
+          <h2 id="form__subhe" class="policy-form__subheading h2-font">
+            Поле выбора даты с иконкой "треугольник"
+          </h2>
+          <div class="row">
+            <!-- Поле выбора даты с иконкой треугольник -->
+
+            <label
+              class="policy-form__input-date input-date col-7 col-md-3"
+              for=""
+            >
+              <p class="input-date__label x-sm-font">Начало действия</p>
+              <div class="input-date__block">
+                <input class="input-date__field" type="date" name="date" />
+                <div class="input-date__icon">
+                  <div
+                    class="input-date__triangle"
+                    style="background-image: url(../assets/icons/triangle.svg)"
+                  ></div>
+                </div>
+              </div>
+            </label>
+
+            <!-- Поле выбора даты с иконкой треугольник -->
+          </div>
+          <!-- Поля с подсказской для заполнения и подзаголовком внизу -->
+          <h2 class="policy-form__subheading h2-font">
+            Поля с подсказской для заполнения и подзаголовком внизу
+          </h2>
+          <div class="row">
+            <label
+              class="policy-form__input-prompt input-prompt col-10 col-md-5"
+              for=""
+            >
+              <input
+                class="input-prompt__field"
+                type="text"
+                placeholder="Фамилия (поле с подсказской)"
+            /></label>
+            <!-- Поля с подсказской для заполнения -->
+
+            <!-- Поля с подсказской для заполнения -->
+            <label
+              class="policy-form__input-prompt input-prompt col-10 col-md-5"
+              for=""
+            >
+              <input
+                class="input-prompt__field"
+                type="text"
+                placeholder="Имя (поле с подсказской)"
+            /></label>
+          </div>
+          <div class="row">
+            <label
+              class="policy-form__input-subtitle input-subtitle col-10 col-md-5"
+              for=""
+            >
+              <input
+                class="input-subtitle__field"
+                type="text"
+                placeholder="Отчество (поле с подсказской)"
+              />
+              <div class="input-subtitle__subtitle">и подзаголовком</div>
+            </label>
+          </div>
+          <!-- Поля с подсказской для заполнения и подзаголовком внизу -->
+
+          <!-- input-subtitle Контактные данные Email -->
+          <div class="row">
+            <label
+              class="policy-form__input-subtitle input-subtitle col-10 col-md-5"
+              for=""
+            >
+              <input
+                class="input-subtitle__field"
+                type="email"
+                id="email"
+                name="email"
+                required
+                placeholder="Email"
+              />
+              <div class="input-subtitle__subtitle">
+                для получения электронного полиса
+              </div>
+            </label>
+            <!-- input-subtitle Контактные данные Email -->
+
+            <!-- input-subtitle Контактные данные Номер телефона -->
+            <label
+              class="policy-form__input-subtitle input-subtitle col-10 col-md-5"
+              for=""
+            >
+              <input
+                class="input-subtitle__field"
+                type="tel"
+                id="tel"
+                name="tel"
+                pattern="+7 [0-9]{1}-[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}"
+                placeholder="Номер телефона"
+              />
+              <div class="input-subtitle__subtitle">на экстренный случай</div>
+            </label>
+            <!-- input-subtitle Контактные данные Номер телефона -->
+          </div>
+          <div class="row mr-bot-24">
+            <p class="policy-form__contact-details col-12 sm-font">
+              Паспортные данные
+            </p>
+          </div>
+          <div class="row">
+            <!-- input-prompt  Паспортные данные серия -->
+            <label
+              class="policy-form__input-prompt input-prompt col-4 col-md-2"
+              for=""
+            >
+              <input
+                class="input-prompt__field"
+                type="text"
+                id="passport"
+                name="passport"
+                placeholder="Серия"
+            /></label>
+            <!-- input-prompt  Паспортные данные серия-->
+
+            <!-- input-prompt  Паспортные данные номер-->
+            <label
+              class="policy-form__input-prompt input-prompt col-4 col-md-2"
+              for=""
+            >
+              <input
+                class="input-prompt__field"
+                type="text"
+                id="passport"
+                name="passport"
+                placeholder="Номер"
+            /></label>
+            <!-- input-prompt  Паспортные данные номер-->
+
+            <!-- input-date Паспортные данные дата выдачи-->
+            <label
+              class="policy-form__input-date input-date col-7 offset-md-1 col-md-3"
+              for=""
+            >
+              <div class="input-date__label">Дата выдачи</div>
+              <div class="input-date__block">
+                <input class="input-date__field" type="date" name="date" />
+                <div class="input-date__icon">
+                  <div
+                    class="input-date__triangle"
+                    style="background-image: url(../assets/icons/triangle.svg)"
+                  ></div>
+                </div>
+              </div>
+            </label>
+            <!-- input-date Паспортные данные дата выдачи-->
+          </div>
+          <div class="row">
+            <!-- input-prompt  Паспортные данные Кем выдан-->
+            <label
+              class="policy-form__input-prompt input-prompt col-10 col-md-5"
+              for=""
+            >
+              <input
+                class="input-prompt__field"
+                type="text"
+                id="passport"
+                name="passport"
+                placeholder="Кем выдан"
+            /></label>
+            <!-- input-prompt  Паспортные данные Кем выдан-->
+          </div>
+
+          <div class="row mr-bot-24">
+            <p class="policy-form__contact-details col-12 sm-font">
+              Адрес регистрации
+            </p>
+          </div>
+          <div class="row">
+            <!-- input-prompt  Паспортные данные Адрес в свободной форме-->
+            <label
+              class="policy-form__input-prompt input-prompt col-10 col-md-5"
+              for=""
+            >
+              <input
+                class="input-prompt__field"
+                type="text"
+                id="passport"
+                name="passport"
+                placeholder="Адрес в свободной форме"
+            /></label>
+            <!-- input-prompt  Паспортные данные Кем выдан-->
+          </div>
+
+          <!-- primary-checkbox  Является застрахованным -->
+          <div id="primary-checkbox" class="row">
+            <label
+              tabindex="0"
+              role="checkbox"
+              id=""
+              class="policy-form__checkbox primary-checkbox col-7 col-md-3"
+            >
+              <div class="primary-checkbox__icon">
+                <span class="primary-checkbox__checker"></span>
+                <input
+                  id="Checkbox"
+                  type="checkbox"
+                  class="primary-checkbox__input"
+                />
+              </div>
+              <div class="policy-form__label primary-checkbox__label sm-font">
+                Является застрахованным
+              </div>
+            </label>
+          </div>
+          <!-- primary-checkbox  Является застрахованным -->
+        </section>
+        <!-- policy-form -->
+
+        <!-- agreement -->
+        <section class="agreement">
+          <div class="agreement__block">
+            <div class="row">
+              <!-- primary-checkbox Продолжая, я соглашаюсь с правилами -->
+              <label
+                tabindex="0"
+                role="checkbox"
+                id=""
+                class="agreement__checkbox primary-checkbox col-12"
+              >
+                <div class="primary-checkbox__icon">
+                  <span class="primary-checkbox__checker"></span>
+                  <input
+                    id="Checkbox"
+                    type="checkbox"
+                    class="primary-checkbox__input"
+                  />
+                </div>
+                <div class="agreement__label primary-checkbox__label sm-font">
+                  Продолжая, я соглашаюсь с
+                  <a
+                    class="agreement__link primary-checkbox__link sm-font"
+                    href=""
+                    >правилами
+                  </a>
+                  и
+                  <a
+                    class="agreement__link primary-checkbox__link sm-font"
+                    href=""
+                    >программой</a
+                  >
+                  оказания услуг.
+                </div>
+              </label>
+              <!-- primary-checkbox  Продолжая, я соглашаюсь с правилами -->
+              <div class="col-12">
+                <button class="agreement__button primary-button">
+                  Оформить полис за 2 000 ₽
+                </button>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- agreement -->
+
+        <!-- Ползунок -->
+        <section class="form">
+          <h1 id="image_ranges" class="form__heading h1-font">Ползунок</h1>
+          <p class="form__description">
+            Ползунок предназначен для ввода чисел в указанном диапазоне, но в
+            отличие от поля <b>input type="number"</b> имеет другой интерфейс и
+            применяется в тех случаях, когда не особенно важно указывать точное
+            значение. На рис. 1 продемонстрирован вид ползунка в разных
+            браузерах.
+          </p>
+          <div class="form__container-image">
+            <img
+              class="form__image form__image_ranges"
+              src="../assets/icons/htmlBook/ranges.png"
+              alt=""
+            />
+          </div>
+          <p class="form__syntax h2-font">
+            Синтаксис создания ползунка следующий.
+          </p>
+          <p class="form__description">
+            input type="range" min="0" max="100" step="1" value="50"
+          </p>
+          <p class="form__description">
+            Здесь min — минимальное число в диапазоне (по умолчанию 0), max —
+            максимальное число (по умолчанию 100), step — шаг изменения чисел
+            (по умолчанию 1), value — текущее значение. По умолчанию value
+            вычисляется по формуле:
+          </p>
+          <div class="form__container-image">
+            <img
+              class="form__image form__image_formula"
+              src="../assets/icons/htmlBook/rangeFormula.png"
+              alt=""
+            />
+          </div>
+          <p class="form__description">
+            Если значение max меньше, чем значение min, то value равно min.
+          </p>
+          <p class="form__description">
+            Атрибуты не являются обязательными, их можно опустить, в таком
+            случае они принимают значения по умолчанию.
+          </p>
+          <p class="form__description">
+            Независимо от минимального и максимального числа ширина ползунка
+            остаётся одинаковой. Изменить ширину, можно, только сбросив стили.
+          </p>
+          <p class="form__description">
+            <b>
+              input[type=range] { <br />
+              width: 200px; <br />
+              -webkit-appearance: none; <br />
+              -moz-appearance: none; <br />
+              appearance: none; <br />
+              }</b
+            >
+          </p>
+          <p class="form__description">
+            Здесь помимо ширины мы указали специальное свойство
+            <b>appearance</b> которое отвечает за базовые стили отображения
+            элемента вашей операционной системы. Значение
+            <b>'none'</b> указывает на то что мы эти стили сбрасываем. По итогу
+            поле range будет отображаться не полностью. Это нам необходимо чтобы
+            задать свои собственные стили для ползунка.
+          </p>
+          <p class="form__description">
+            Сами ползунки редко применяются в «чистом» виде, поскольку не
+            обеспечивают необходимую обратную связь с пользователем, а вот в
+            сочетании с JavaScript это становится мощным и удобным элементом
+            интерфейса. В примере 1 с помощью ползунка изменяется размер
+            изображения, такая возможность часто используется в различных
+            фотогалереях.
+          </p>
+
+          <!-- slider -->
+          <div class="slider__block">
+            <p class="slider__subheading">Сумма кредита</p>
+
+            <div class="slider">
+              <input
+                class="slider__range"
+                type="range"
+                min="1"
+                max="100"
+                id="size"
+                value="50"
+              />
+              <div class="slider__title">
+                <p class="slider__title_item">90 000 р.</p>
+                <p class="slider__title_item">2 000 000 р.</p>
+              </div>
+            </div>
+          </div>
+          <!-- slider -->
+
+          <!-- slider -->
+          <div class="slider__block">
+            <p class="slider__subheading">Срок кредита</p>
+            <div class="slider">
+              <input
+                class="slider__range"
+                type="range"
+                min="1"
+                max="100"
+                id="size"
+                value="50"
+              />
+              <div class="slider__title">
+                <p class="slider__title_item">1 год</p>
+                <p class="slider__title_item">5 лет</p>
+              </div>
+            </div>
+          </div>
+          <!-- slider -->
+
+          <!--  slider-icon -->
+          <h1 class="form__heading h1-font">"slider-icon" слайдер с иконкой</h1>
+          <p class="form-description">
+            не забыть скачать иконку и подключить её
+          </p>
+          <p class="form__syntax">
+            background: url(../../assets/icons/iconSlider.svg);
+          </p>
+          <div class="revenue">
+            <div class="form__slider-container">
+              <p class="form__slider-title">Сумма вклада</p>
+              <p class="form__slider-value">100 000</p>
+              <!-- slider-icon -->
+              <input
+                type="range"
+                min="1"
+                max="100"
+                value="50"
+                class="slider-icon"
+                id="myRange"
+              />
+              <!--  slider-icon -->
+            </div>
+            <!-- switch-currency twin-switch -->
+          </div>
+          <!--  slider-icon -->
+        </section>
+        <!-- Ползунок -->
+        <!--  radio Переключатели (radiobutton) -->
+        <section class="form">
+          <h1 id="primary-radio" class="form__heading h1-font">
+            radio Переключатели (radiobutton).
+          </h1>
+
+          <p class="form__description">
+            Применяется, когда следует выбрать один вариант из нескольких
+            предложенных.
+          </p>
+
+          <p class="form__description">
+            С ними используются
+            <a. class="form__link" href="http://htmlbook.ru/html/input/checked"
+              >атрибуты checked</a.
+            >
+            Этот атрибут определяет, помечен ли заранее такой элемент формы, как
+            флажок или переключатель. В случае использования переключателей
+            (radiobutton), может быть отмечен только один элемент группы, для
+            флажков (checkbox) допустимо пометить хоть все элементы.
+          </p>
+          <h2 class="form__subheading h2-font">Тройной переключатель</h2>
+          <!--  -->
+
+          <!-- primary-radio Тройной переключатель -->
+          <div class="form__primary-radio primary-radio__container">
+            <p class="primary-radio__subheading">
+              Каким браузером в основном пользуетесь?
+            </p>
+            <form class="primary-radio">
+              <label class="primary-radio__item" for="">
+                <input
+                  class="primary-radio__field"
+                  type="radio"
+                  name="browser"
+                  value="ie"
+                />
+                <div class="primary-radio__title sm-font">Explorer</div>
+              </label>
+
+              <label class="primary-radio__item" for="">
+                <input
+                  class="primary-radio__field"
+                  type="radio"
+                  name="browser"
+                  value="ie"
+                />
+                <div class="primary-radio__title sm-font">Opera</div>
+              </label>
+
+              <label class="primary-radio__item" for="">
+                <input
+                  class="primary-radio__field"
+                  type="radio"
+                  name="browser"
+                  value="ie"
+                />
+                <div class="primary-radio__title sm-font">Firefox</div>
+              </label>
+            </form>
+          </div>
+          <!-- primary-radio Тройной переключатель -->
+
+          <!--  -->
+          <h2 class="form__subheading h2-font">
+            Двойной спаренный переключатель
+          </h2>
+          <!--  -->
+
+          <!-- secondary-radio Двойной спаренный переключатель -->
+          <div class="form__secondary-radio">
+            <p class="secondary-radio__subheading">Выберете окно просмотра</p>
+            <form class="secondary-radio">
+              <label
+                class="secondary-radio__item secondary-radio__item_left"
+                for=""
+              >
+                <input
+                  class="secondary-radio__field"
+                  type="radio"
+                  name="browser"
+                  value="ie"
+                />
+                <div
+                  class="secondary-radio__title secondary-radio__title_left sm-font"
+                >
+                  Список
+                </div>
+              </label>
+
+              <label
+                class="secondary-radio__item secondary-radio__item_right"
+                for=""
+              >
+                <input
+                  class="secondary-radio__field"
+                  type="radio"
+                  name="browser"
+                  value="ie"
+                />
+                <div
+                  class="secondary-radio__title secondary-radio__title_right sm-font"
+                >
+                  Карта
+                </div>
+              </label>
+            </form>
+          </div>
+          <!-- secondary-radio Двойной спаренный переключатель -->
+
+          <!--  -->
+        </section>
+        <!--   radio Переключатели (radiobutton)-->
+
+        <!-- Раскрывающийся список, тег select , а также поле с одним или...  -->
+        <section class="form">
+          <h1 id="teg-select" class="form__heading h1-font">
+            Раскрывающийся список,
+            <a class="form__link" href="http://htmlbook.ru/html/select"
+              >тег select</a
+            >
+            , а также
+            <a
+              class="form__link"
+              href="http://htmlbook.ru/samhtml5/formy/pole-so-spiskom"
+              >поле выбора с одним или множественным списком .</a
+            >
+          </h1>
+          <div>
+            <p class="form__description">
+              Тег <b>select</b> позволяет создать элемент интерфейса в виде
+              раскрывающегося списка, а также список с одним или множественным
+              выбором. В зависимости от настроек, в списке можно выбирать одно
+              или несколько значений. Преимущество списка в его компактности и
+              универсальности, список может занимать одну или несколько строк, в
+              нём можно выбирать одно или несколько значений.
+            </p>
+            <p class="form__description">
+              Тег <b>select</b> выступает контейнером для пунктов списка и
+              определяет его вид, будет ли это раскрывающийся список или же
+              список с одним или множественным выбором.
+            </p>
+            <p class="form__description">
+              Конечный вид зависит от использования атрибута <b>size</b> тега
+              <b>select</b>, который устанавливает высоту списка. <br />
+            </p>
+            <p class="form__description">
+              Ширина списка при этом определяется автоматически исходя из длины
+              самого широкого текста внутри <b> option</b>, а также может
+              изменяться с помощью стилей. <br />
+            </p>
+            <p class="form__description">
+              Каждый пункт создается с помощью тега <b>option</b>, который
+              должен быть вложен в контейнер <b>select</b>. Если планируется
+              отправлять данные списка на сервер, то требуется поместить элемент
+              <b>select</b> внутрь формы. Это также необходимо, когда к данным
+              списка идет обращение через скрипты.
+            </p>
+          </div>
+          <h2 class="form__subheading h2-font">Поле выбора</h2>
+
+          <!-- поле выбора_header  -->
+          <form
+            class="form__select select select_header"
+            action=""
+            method="post"
+          >
+            <label class="select__title-header sm-font" for="">
+              <select class="select__list-header sm-font" name="">
+                <option class="select__item-header sm-font" value="">
+                  Частным лицам
+                </option>
+                <option class="select__item-header sm-font" value="">
+                  Кредиты
+                </option>
+                <option class="select__item-header sm-font" value="">
+                  Ипотека
+                </option>
+                <option class="select__item-header sm-font" value="">
+                  Кассовое обслуживание
+                </option>
+                <option class="select__item-header sm-font" value="">
+                  Вклады
+                </option>
+                <option class="select__item-header sm-font" value="">
+                  Денежные переводы
+                </option>
+              </select>
+            </label>
+          </form>
+          <!-- поле выбора_header  -->
+
+          <!--  Два поля выбора и переключатель secondary-radio в один ряд -->
+          <div class="form">
+            <h2 class="form__subheading h2-font">
+              Два поля выбора и переключатель "twin-switch" в один ряд
+            </h2>
+
+            <div class="form__list">
+              <div class="form__sector-select">
+                <!-- поле выбора_city  -->
+                <form class="select select_city" action="" method="post">
+                  <label class="select__title x-sm-font" for="">
+                    <select class="select__list" name="city">
+                      <option class="select__item" value="">Москва</option>
+                      <option class="select__item" value="">
+                        Санкт Петербург
+                      </option>
+                      <option class="select__item" value="">Казань</option>
+                      <option class="select__item" value="">
+                        Нижний Новгород
+                      </option>
+                      <option class="select__item" value="">Волгоград</option>
+                      <option class="select__item" value="">Камышин</option>
+                    </select>
+                  </label>
+                </form>
+                <!-- поле выбора_city  -->
+
+                <!-- поле выбора_area  -->
+                <form class="select select_area" action="" method="post">
+                  <label class="select__title x-sm-font" for="">
+                    <select class="select__list" name="area">
+                      <option class="select__item" value="">Кузминки</option>
+                      <option class="select__item" value="">Некрасовка</option>
+                      <option class="select__item" value="">Люберцы</option>
+                      <option class="select__item" value="">Лефортово</option>
+                      <option class="select__item" value="">Дубровка</option>
+                      <option class="select__item" value="">
+                        Волгоградский проспект
+                      </option>
+                    </select>
+                  </label>
+                </form>
+                <!-- поле выбора_area  -->
+
+                <!-- switch-viewport twin-switch -->
+                <div class="form__switch-viewport">
+                  <form class="twin-switch">
+                    <label class="twin-switch__item">
+                      <input
+                        class="twin-switch__field"
+                        type="radio"
+                        name="browser"
+                        value="ie"
+                      />
+                      <div class="twin-switch__title">Список</div>
+                    </label>
+
+                    <label class="form__item-color twin-switch__item">
+                      <input
+                        class="twin-switch__field"
+                        type="radio"
+                        name="browser"
+                        value="ie"
+                      />
+                      <div class="twin-switch__title">Карта</div>
+                    </label>
+                  </form>
+                </div>
+                <!-- switch-viewport twin-switch -->
+              </div>
+            </div>
+          </div>
+          <!-- Два поля выбора и переключатель secondary-radio в один ряд -->
+        </section>
+        <!-- Раскрывающийся список, тег select , а также поле с одним или... -->
+
+        <!-- twin-switch -->
+        <section class="form">
+          <p class="form__description"></p>
+          <h1 id="twin-switch" class="form__heading h1-font">
+            Переключатель <br />
+            "twin-switch"
+          </h1>
+          <p class="form__description">
+            form__switch-currency <br />
+            form__switch-capitalization <br />
+            form__switch-package
+          </p>
+
+          <div class="form__block-switch">
+            <!-- switch-currency twin-switch -->
+            <div class="form__switch-currency">
+              <form class="twin-switch">
+                <label class="twin-switch__item">
+                  <input
+                    class="twin-switch__field"
+                    type="radio"
+                    name="browser"
+                    value="ie"
+                  />
+                  <div class="twin-switch__title">₽</div>
+                </label>
+
+                <label class="twin-switch__item">
+                  <input
+                    class="twin-switch__field"
+                    type="radio"
+                    name="browser"
+                    value="ie"
+                  />
+                  <div class="twin-switch__title">$</div>
+                </label>
+              </form>
+            </div>
+            <!-- switch-currency twin-switch -->
+
+            <!-- switch-capitalization twin-switch -->
+            <div class="form__switch-capitalization">
+              <form class="twin-switch">
+                <label class="twin-switch__item">
+                  <input
+                    class="twin-switch__field"
+                    type="radio"
+                    name="browser"
+                    value="ie"
+                  />
+                  <div class="twin-switch__title">С капитализацией %</div>
+                </label>
+
+                <label class="twin-switch__item">
+                  <input
+                    class="twin-switch__field"
+                    type="radio"
+                    name="browser"
+                    value="ie"
+                  />
+                  <div class="twin-switch__title">Без капитализации %</div>
+                </label>
+              </form>
+            </div>
+            <!-- switch-capitalization twin-switch -->
+          </div>
+
+          <!-- switch-package twin-switch -->
+          <div class="form__switch-package">
+            <form class="twin-switch">
+              <label class="twin-switch__item">
+                <input
+                  class="twin-switch__field"
+                  type="radio"
+                  name="browser"
+                  value="ie"
+                />
+                <div class="twin-switch__title">Без пакета услуг</div>
+              </label>
+
+              <label class="twin-switch__item">
+                <input
+                  class="twin-switch__field"
+                  type="radio"
+                  name="browser"
+                  value="ie"
+                />
+                <div class="twin-switch__title">Эконом</div>
+              </label>
+
+              <label class="twin-switch__item">
+                <input
+                  class="twin-switch__field"
+                  type="radio"
+                  name="browser"
+                  value="ie"
+                />
+                <div class="twin-switch__title">Оптимум</div>
+              </label>
+
+              <label class="twin-switch__item">
+                <input
+                  class="twin-switch__field"
+                  type="radio"
+                  name="browser"
+                  value="ie"
+                />
+                <div class="twin-switch__title">Максимум +</div>
+              </label>
+            </form>
+          </div>
+          <!-- switch-package twin-switch -->
+        </section>
+        <!-- twin-switch -->
+
+        <!-- nav menu рыскрывающийся список-->
+        <section class="nav">
+          <h2 id="drop-down-list" class="nav__heading">
+            Подвижный раскрывающийся список
+          </h2>
+          <p class="nav__description">
+            Наведите указатель мыши на кнопку, чтобы открыть раскрывающееся
+            меню.
+          </p>
+          <aside class="nav__container">
+            <!-- forms_list -->
+            <ul class="nav__list">
+              <a class="nav__link" href="../templates/forms.html">
+                Формы form
+              </a>
+
+              <li class="nav__item">
+                <a class="nav__item_link" href="#forms"> Формы form</a>
+              </li>
+
+              <li class="nav__item">
+                <a class="nav__item_link" href="#type-input"> Типы форм</a>
+              </li>
+
+              <li class="nav__item">
+                <a class="nav__item_link" href="#button">Кнопки button </a>
+              </li>
+
+              <li class="nav__item">
+                <a class="nav__item_link" href="#inputs"> Поля input</a>
+              </li>
+              <li class="nav__item">
+                <a class="nav__item_link" href="#primary-button"
+                  >Самая простая кнопка button
+                </a>
+              </li>
+              <li class="nav__item">
+                <a class="nav__item_link" href="#form__subhe"
+                  >Поле выбора даты
+                </a>
+              </li>
+              <li class="nav__item">
+                <a class="nav__item_link" href="#primary-checkbox"
+                  >primary-checkbox
+                </a>
+              </li>
+              <li class="nav__item">
+                <a class="nav__item_link" href="#image_ranges"> Ползунок</a>
+              </li>
+              <li class="nav__item">
+                <a class="nav__item_link" href="#primary-radio"
+                  >radio Переключатели (radiobutton).
+                </a>
+              </li>
+              <li class="nav__item">
+                <a class="nav__item_link" href="#teg-select"
+                  >Раскрывающийся список, тег select
+                </a>
+              </li>
+              <li class="nav__item">
+                <a class="nav__item_link" href="#twin-switch">
+                  Переключатель "twin-switch"
+                </a>
+              </li>
+              <li class="nav__item">
+                <a class="nav__item_link" href="#drop-down-list">
+                  Меню - раскрывающийся список
+                </a>
+              </li>
+            </ul>
+            <!-- forms_list -->
+          </aside>
+        </section>
+        <!-- nav menu рыскрывающийся список-->
+
+        <!-- drop-down выпадающий список -->
+        <section class="form-down">
+          <h1 id="form-down__dropdown" class="form-down__heading">
+            drop-down Выпадающее меню.
+          </h1>
+          <p class="form-down__description">
+            Наведите указатель мыши на кнопку, чтобы открыть выпадающее меню.
+          </p>
+          <!-- drop-down Выпадающее меню. -->
+          <div class="form-down__dropdown drop-down">
+            <button class="drop-down__button">Dropdown</button>
+            <div class="drop-down__content">
+              <a class="drop-down__link" href="#">Link 1</a>
+              <a class="drop-down__link" href="#">Link 2</a>
+              <a class="drop-down__link" href="#">Link 3</a>
+            </div>
+          </div>
+          <!-- drop-down Выпадающее меню. -->
+          <p>
+            Наведите указатель мыши на кнопку, чтобы открыть выпадающее меню.
+          </p>
+        </section>
+        <!-- drop-down выпадающий список -->
+      </article>
+
+      <!-- menu-mobile -->
+      <div class="menu-mobile">
+        <img
+          src="../assets/logotype/smallLogo.svg"
+          class="menu-mobile__logo-small"
+        />
+        <div class="menu-mobile__dots">
+          <div class="menu-mobile__dots_item"></div>
+          <div class="menu-mobile__dots_item"></div>
+          <div class="menu-mobile__dots_item"></div>
+        </div>
+      </div>
+      <!-- menu-mobile -->
+    </main>
+    <!-- main -->
+
+    <!-- menu -->
+    <nav class="menu">
+      <!-- transform-list -->
+      <ul class="menu__list">
+        <a class="menu__link h2-font" href="../templates/transformations.html">
+          Двумерные трансформации</a
+        >
+        <li class="menu__item">
+          <a
+            class="menu__item_link"
+            href="../templates/transformations.html#transformations"
+            >Трансформация элемента</a
+          >
+        </li>
+        <li class="menu__item">
+          <a
+            class="menu__item_link"
+            href="../templates/transformations.html#translate-x"
+            >Сдвиг по горизонтали</a
+          >
+        </li>
+        <li class="menu__item">
+          <a
+            class="menu__item_link"
+            href="../templates/transformations.html#translate-y"
+            >Сдвиг по вертикали</a
+          >
+        </li>
+        <li class="menu__item">
+          <a
+            class="menu__item_link"
+            href="../templates/transformations.html#translate"
+            >Сдвиг по горизонтали и вертикали</a
+          >
+        </li>
+        <li class="menu__item">
+          <a
+            class="menu__item_link"
+            href="../templates/transformations.html#scale"
+            >Изменение масштаба элемента</a
+          >
+        </li>
+        <li class="menu__item">
+          <a
+            class="menu__item_link"
+            href="../templates/transformations.html#scale-x"
+            >Изменение масштаба по горизонтали</a
+          >
+        </li>
+        <li class="menu__item">
+          <a
+            class="menu__item_link"
+            href="../templates/transformations.html#scale-y"
+            >Изменение масштаба по вертикали</a
+          >
+        </li>
+        <li class="menu__item">
+          <a
+            class="menu__item_link"
+            href="../templates/transformations.html#rotate"
+            >Поворот элемента</a
+          >
+        </li>
+        <li class="menu__item">
+          <a
+            class="menu__item_link"
+            href="../templates/transformations.html#skew-x"
+            >Наклон элемента по горизонтали</a
+          >
+        </li>
+        <li class="menu__item">
+          <a
+            class="menu__item_link"
+            href="../templates/transformations.html#skew-y"
+            >Наклон элемента по вертикали</a
+          >
+        </li>
+        <li class="menu__item">
+          <a
+            class="menu__item_link"
+            href="../templates/transformations.html#transform-origin"
+            >Координаты трансформации элемента.</a
+          >
+        </li>
+      </ul>
+      <!-- transform-list -->
+
+      <!-- transitions_list -->
+      <ul class="menu__list">
+        <a
+          class="menu__link h2-font"
+          href="../templates/smoothTransitions.html"
+        >
+          Плавные переходы
+        </a>
+        <li class="menu__item">
+          <a
+            class="menu__item_link"
+            href="../templates/smoothTransitions.html#transition"
+            >Универсальное свойство</a
+          >
+        </li>
+        <li class="menu__item">
+          <a
+            class="menu__item_link"
+            href="../templates/smoothTransitions.html#transition-duration"
+            >Длительность перехода</a
+          >
+        </li>
+        <li class="menu__item">
+          <a
+            class="menu__item_link"
+            href="../templates/smoothTransitions.html#transition-property"
+            >Какие свойства плавно изменять</a
+          >
+        </li>
+        <li class="menu__item">
+          <a
+            class="menu__item_link"
+            href="../templates/smoothTransitions.html#transition-delay"
+            >Задержка перехода
+          </a>
+        </li>
+        <li class="menu__item">
+          <a
+            class="menu__item_link"
+            href="../templates/smoothTransitions.html#transition-timing-function"
+            >Скорость и ускорение переходов
+          </a>
+        </li>
+        <li class="menu__item">
+          <a
+            class="menu__item_link"
+            href="../templates/smoothTransitions.html#example"
+            >примеры timing-function переходов</a
+          >
+        </li>
+        <li class="menu__item">
+          <a
+            class="menu__item_link"
+            href="../templates/smoothTransitions.html#graphics-transition"
+            >Графики переходов</a
+          >
+        </li>
+      </ul>
+      <!-- transitions_list -->
+
+      <!-- gradient_list -->
+      <ul class="menu__list">
+        <a class="menu__link h2-font" href="../templates/linearGradient.html">
+          Линейный градиент</a
+        >
+        <li class="menu__item">
+          <a
+            class="menu__item_link"
+            href="../templates/linearGradient.html#linear-gradient"
+            >Линейный градиент</a
+          >
+        </li>
+        <li class="menu__item">
+          <a
+            class="menu__item_link"
+            href="../templates/linearGradient.html#examples"
+            >Примеры прямых и диогональных переходов</a
+          >
+        </li>
+        <li class="menu__item">
+          <a
+            class="menu__item_link"
+            href="../templates/linearGradient.html#angled-gradients"
+            >Градиенты под углом</a
+          >
+        </li>
+        <li class="menu__item">
+          <a
+            class="menu__item_link"
+            href="../templates/linearGradient.html#sample-flower"
+            >Градиенты под углом, пример:</a
+          >
+        </li>
+        <li class="menu__item">
+          <a
+            class="menu__item_link"
+            href="../templates/linearGradient.html#sample"
+            >Множество градиентов</a
+          >
+        </li>
+        <li class="menu__item">
+          <a
+            class="menu__item_link"
+            href="../templates/linearGradient.html#color-stop"
+          >
+            Пропорции цветов и колорстопы</a
+          >
+        </li>
+        <li class="menu__item">
+          <a
+            class="menu__item_link"
+            href="../templates/linearGradient.html#color-stop-sample"
+            >Примеры колор стопов</a
+          >
+        </li>
+        <li class="menu__item">
+          <a
+            class="menu__item_link"
+            href="../templates/linearGradient.html#repeating-gradient"
+          >
+            Повторяющийся линейный градиент</a
+          >
+        </li>
+        <li class="menu__item">
+          <a
+            class="menu__item_link"
+            href="../templates/linearGradient.html#stylish-buttons"
+            >Стильные кнопки</a
+          >
+        </li>
+        <li class="menu__item">
+          <a
+            class="menu__item_link"
+            href="../templates/linearGradient.html#footer"
+            >Рекомендации</a
+          >
+        </li>
+      </ul>
+      <!-- gradient_list -->
+
+      <!-- shadow_list -->
+      <ul class="menu__list">
+        <a class="menu__link h2-font" href="../templates/boxShadow.html">
+          Тени box-shadow
+        </a>
+
+        <li class="menu__item">
+          <a
+            class="menu__item_link"
+            href="../templates/boxShadow.html#box-shadow"
+          >
+            Тени box-shadow</a
+          >
+        </li>
+      </ul>
+      <!-- shadow_list -->
+
+      <!-- stuff_list -->
+      <ul class="menu__list">
+        <a class="menu__link h2-font" href="../templates/coolStuff.html"
+          >Крутые вещи</a
+        >
+        <li class="menu__item">
+          <a
+            class="menu__item_link"
+            href="../templates/coolStuff.html#custom-shadows"
+            >Нестандартные тени</a
+          >
+        </li>
+        <li class="menu__item">
+          <a
+            class="menu__item_link"
+            href="../templates/coolStuff.html#hover-active"
+          >
+            Эффекты при наведении на кнопки</a
+          >
+        </li>
+        <li class="menu__item">
+          <a
+            class="menu__item_link"
+            href="../templates/coolStuff.html#active-gallery"
+          >
+            Эффекты при наведении на галерею</a
+          >
+        </li>
+        <li class="menu__item">
+          <a
+            class="menu__item_link"
+            href="../templates/coolStuff.html#stack-cards"
+            >Стопка" карт</a
+          >
+        </li>
+        <li class="menu__item">
+          <a
+            class="menu__item_link"
+            href="../templates/coolStuff.html#centering"
+            >Центрирование изображений
+          </a>
+        </li>
+        <li class="menu__item">
+          <a
+            class="menu__item_link"
+            href="../templates/coolStuff.html#aspect-ratio"
+          >
+            Свойство CSS aspect-ratio: X / Y</a
+          >
+        </li>
+        <li class="menu__item">
+          <a
+            class="menu__item_link"
+            href="../templates/coolStuff.html#after-before"
+            >::after и ::before</a
+          >
+        </li>
+      </ul>
+      <!-- stuff_list -->
+
+      <!-- forms_list -->
+      <ul class="menu__list">
+        <a class="menu__link h2-font" href="../templates/forms.html">
+          Формы form
+        </a>
+
+        <li class="menu__item">
+          <a class="menu__item_link" href="../templates/forms.html#forms">
+            Формы form</a
+          >
+        </li>
+
+        <li class="menu__item">
+          <a class="menu__item_link" href="../templates/forms.html#type-input">
+            Типы форм</a
+          >
+        </li>
+
+        <li class="menu__item">
+          <a class="menu__item_link" href="../templates/forms.html#button"
+            >Кнопки button
+          </a>
+        </li>
+
+        <li class="menu__item">
+          <a class="menu__item_link" href="../templates/forms.html#inputs">
+            Поля input</a
+          >
+        </li>
+        <li class="menu__item">
+          <a
+            class="menu__item_link"
+            href="../templates/forms.html#primary-button"
+            >Самая простая кнопка button
+          </a>
+        </li>
+        <li class="menu__item">
+          <a class="menu__item_link" href="../templates/forms.html#form__subhe"
+            >Поле выбора даты
+          </a>
+        </li>
+        <li class="menu__item">
+          <a
+            class="menu__item_link"
+            href="../templates/forms.html#primary-checkbox"
+            >primary-checkbox
+          </a>
+        </li>
+        <li class="menu__item">
+          <a
+            class="menu__item_link"
+            href="../templates/forms.html#image_ranges"
+          >
+            Ползунок</a
+          >
+        </li>
+        <li class="menu__item">
+          <a
+            class="menu__item_link"
+            href="../templates/forms.html#primary-radio"
+            >radio Переключатели (radiobutton).
+          </a>
+        </li>
+        <li class="menu__item">
+          <a class="menu__item_link" href="../templates/forms.html#teg-select"
+            >Раскрывающийся список, тег select
+          </a>
+        </li>
+        <li class="menu__item">
+          <a class="menu__item_link" href="../templates/forms.html#twin-switch">
+            Переключатель "twin-switch"
+          </a>
+        </li>
+        <li class="menu__item">
+          <a
+            class="menu__item_link"
+            href="../templates/forms.html#drop-down-list"
+          >
+            Меню - раскрывающийся список.
+          </a>
+        </li>
+        <li class="menu__item">
+          <a
+            class="menu__item_link"
+            href="../templates/forms.html#drop-down__dropdown"
+          >
+            drop-down Выпадающее меню.
+          </a>
+        </li>
+      </ul>
+      <!-- forms_list -->
+
+      <!-- position-ratio_list -->
+      <ul class="menu__list">
+        <a
+          class="menu__link h2-font"
+          href="../templates/positionAspectRatio.html"
+        >
+          Работа с изображениями</a
+        >
+
+        <li class="menu__item">
+          <a
+            class="menu__item_link"
+            href="../templates/positionAspectRatio.html#centering"
+          >
+            Центрирование centering</a
+          >
+        </li>
+
+        <li class="menu__item">
+          <a
+            class="menu__item_link"
+            href="../templates/positionAspectRatio.html#aspect-ratio"
+          >
+            Свойство CSS aspect-ratio: X / Y
+          </a>
+        </li>
+
+        <li class="menu__item">
+          <a
+            class="menu__item_link"
+            href="../templates/positionAspectRatio.html#factoring-width"
+          >
+            Факторинг в min-*и max-*</a
+          >
+        </li>
+
+        <li class="menu__item">
+          <a
+            class="menu__item_link"
+            href="../templates/positionAspectRatio.html#aspect-ratio-example"
+          >
+            Примеры работы свойства aspect-ratio:</a
+          >
+        </li>
+
+        <li class="menu__item">
+          <a
+            class="menu__item_link"
+            href="../templates/positionAspectRatio.html#position"
+          >
+            Позиционирование элемента</a
+          >
+        </li>
+
+        <li class="menu__item">
+          <a
+            class="menu__item_link"
+            href="../templates/positionAspectRatio.html#position__absolute"
+          >
+            Позиционирование absolute подробнее.</a
+          >
+        </li>
+
+        <li class="menu__item">
+          <a
+            class="menu__item_link"
+            href="../templates/positionAspectRatio.html#height-absolute"
+          >
+            Высота для position: absolute;</a
+          >
+        </li>
+
+        <li class="menu__item">
+          <a
+            class="menu__item_link"
+            href="../templates/positionAspectRatio.html#relative-absolute"
+          >
+            Позиционирование и aspect-ratio: X / Y;</a
+          >
+        </li>
+      </ul>
+      <!-- position-ratio_list -->
+
+      <!-- table_list -->
+      <ul class="menu__list">
+        <a class="menu__link h2-font" href="../templates/table.html">
+          Таблица
+        </a>
+
+        <li class="menu__item">
+          <a class="menu__item_link" href="../templates/table.html#table">
+            Таблица</a
+          >
+        </li>
+      </ul>
+      <!-- table_list -->
+    </nav>
+    <!-- menu -->
+
+    <!-- header  -->
+    <header class="header"></header>
+    <!-- header  -->
+  </body>
+</html>

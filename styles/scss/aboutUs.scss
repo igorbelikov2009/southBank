@@ -1,152 +1,15 @@
-body {
+body * {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   font-style: normal;
   font-weight: normal;
-  color: #2f2f34;
+  font-size: 16px;
   line-height: 24px;
+  color: #2f2f34;
 }
 
 .main {
   min-height: 110vh;
 }
-
-// header
-.header {
-  width: 100%;
-  max-width: 1440px;
-  margin: 0 auto;
-  background-color: #fff;
-
-  &__row {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-left: 24px;
-    margin-right: 24px;
-
-    @media screen and (min-width: 1025px) {
-      margin-left: 72px;
-      margin-right: 72px;
-    }
-  }
-
-  &__left {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-
-  &__lines {
-    cursor: pointer;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    width: 26px;
-    height: 16px;
-    margin-right: 22px;
-
-    @media screen and (min-width: 1025px) {
-      display: none;
-    }
-  }
-
-  &__line {
-    width: 26px;
-    height: 2px;
-    border-radius: 2px;
-    background-color: #617e8c;
-  }
-
-  &__logo {
-    width: 139px;
-    height: 28px;
-    margin: 18.5px 0;
-  }
-
-  &__select {
-    display: none;
-
-    @media screen and (min-width: 1025px) {
-      display: block;
-    }
-  }
-
-  &__link {
-    text-decoration: none;
-
-    &_nav {
-      display: none;
-
-      @media screen and (min-width: 1025px) {
-        display: block;
-      }
-    }
-
-    &_login {
-      display: flex;
-      justify-content: space-between;
-    }
-  }
-
-  &__authorization {
-    flex: none;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-
-    @media screen and (min-width: 576px) {
-      width: 186px;
-    }
-  }
-
-  &__icon {
-    width: 20px;
-    height: 20px;
-
-    &_search {
-      margin-right: 32px;
-
-      @media screen and (min-width: 576px) {
-        margin-right: 24px;
-      }
-    }
-
-    &_login {
-      margin-right: 0;
-
-      @media screen and (min-width: 576px) {
-        margin-right: 24px;
-      }
-    }
-  }
-
-  &__login {
-    display: none;
-
-    @media screen and (min-width: 576px) {
-      display: block;
-    }
-  }
-}
-// header
-
-// select header
-.select {
-  width: 100%;
-
-  &_header {
-    max-width: 132px;
-  }
-
-  &__list-header {
-    width: 100%;
-  }
-
-  &__item-header {
-    width: 100%;
-  }
-}
-// select
 
 // top-block
 .top-block {
@@ -174,12 +37,9 @@ body {
 
   &__heading {
     width: 100%;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-style: normal;
     font-weight: bold;
     font-size: 18px;
     line-height: 24px;
-    line-height: 36px;
     color: white;
     margin-bottom: 24px;
     padding-left: 24px;
@@ -207,7 +67,7 @@ body {
     }
   }
 
-  &__buttons {
+  &__button-container {
     width: 100%;
     max-width: 200px;
     margin-bottom: 36px;
@@ -251,12 +111,10 @@ body {
 
   &__desciption {
     font-size: 14px;
-    line-height: 24px;
     margin: 16px;
 
     @media screen and (min-width: 767px) {
       font-size: 16px;
-      line-height: 24px;
       margin-bottom: 24px;
     }
   }
@@ -274,7 +132,7 @@ body {
       width: calc((100% + 72px) / 2);
     }
 
-    &_primary {
+    &:first-child {
       margin-top: 12px;
       margin-bottom: 24px;
 
@@ -287,7 +145,7 @@ body {
       }
     }
 
-    &_secondary {
+    &:last-child {
       @media screen and (min-width: 576px) {
         position: absolute;
         top: 0;
@@ -322,10 +180,8 @@ body {
   }
 
   &__block {
-    width: 100%;
-    height: 200px;
-    min-width: 196px;
     max-width: 196px;
+    height: 200px;
     margin: 0 12px;
     position: relative;
   }
@@ -369,9 +225,6 @@ body {
     bottom: -21px;
     left: 0px;
 
-    @media screen and (min-width: 1024px) {
-      font-size: 16px;
-    }
     @media screen and (min-width: 1440px) {
       font-size: 18px;
     }
@@ -394,6 +247,7 @@ body {
   &__heading {
     font-size: 18px;
     line-height: 24px;
+    margin-bottom: 12px;
 
     @media screen and (min-width: 1024px) {
       font-size: 24px;
@@ -404,12 +258,10 @@ body {
 
   &__offer {
     font-size: 14px;
-    line-height: 24px;
     margin-bottom: 64px;
 
     @media screen and (min-width: 1024px) {
       font-size: 16px;
-      line-height: 24px;
       padding-left: 72px;
       margin-bottom: 64px;
     }
@@ -418,12 +270,10 @@ body {
   &__link {
     text-decoration: none;
     font-size: 14px;
-    line-height: 24px;
     color: blue;
 
     @media screen and (min-width: 1024px) {
       font-size: 16px;
-      line-height: 24px;
     }
   }
 
@@ -436,14 +286,12 @@ body {
 
   &__block {
     min-width: 100%;
-
     display: flex;
     justify-content: center;
     margin: 0 12px;
 
     @media screen and (min-width: 600px) {
       margin: 0 auto;
-
       min-width: 600px;
     }
   }
@@ -501,424 +349,3 @@ body {
   }
 }
 //stories
-
-// location
-.location {
-  width: 100%;
-  max-width: 1440px;
-  margin: 0 auto;
-  padding: 40px 24px 16px;
-  background: #f2f7fb;
-  position: relative;
-
-  @media screen and (min-width: 1024px) {
-    padding: 40px 72px 56px;
-  }
-
-  &__heading {
-    font-weight: bold;
-    margin-bottom: 24px;
-    text-align: center;
-  }
-
-  &__container {
-    display: flex;
-    justify-content: space-between;
-  }
-
-  &__list {
-    width: 272px;
-
-    @media screen and (min-width: 375px) {
-      width: 327px;
-    }
-  }
-
-  &__sector-select {
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-bottom: 16px;
-
-    @media screen and (min-width: 576px) {
-      max-width: 80%;
-    }
-  }
-
-  &__address {
-    width: 100%;
-    margin-bottom: 16px;
-    position: relative;
-
-    &::before {
-      content: url(../../assets/icons/southernMain/mapsFlags.svg);
-      position: relative;
-      top: 4px;
-      left: -1px;
-    }
-  }
-
-  &__map-container {
-    width: calc(100% - 327px);
-    height: 624px;
-    background-position: center center;
-    background-size: cover;
-    display: none;
-
-    @media screen and (min-width: 576px) {
-      display: block;
-    }
-  }
-
-  &__map-title {
-    color: #2f2f34;
-    margin-bottom: 16px;
-  }
-
-  &__map-block {
-    width: 100%;
-    overflow-x: scroll;
-
-    @media screen and (min-width: 1440px) {
-      overflow-x: hidden;
-    }
-  }
-
-  &__map {
-    width: 969px;
-    height: 624px;
-    background-position: center center;
-    background-size: cover;
-  }
-}
-// location
-
-// select
-.select {
-  width: 100%;
-
-  &_city {
-    max-width: 69px;
-
-    @media screen and (min-width: 576px) {
-      max-width: 40%;
-    }
-  }
-
-  &_area {
-    max-width: 75px;
-
-    @media screen and (min-width: 576px) {
-      max-width: 40%;
-    }
-  }
-
-  &__list {
-    width: 100%;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 11px;
-    line-height: 24px;
-    color: #28323c;
-
-    @media screen and (min-width: 576px) {
-      font-size: 13px;
-    }
-  }
-
-  &__hidden {
-    line-height: 0px;
-  }
-
-  &__item {
-    width: 100%;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 11px;
-    line-height: 24px;
-    color: #28323c;
-
-    @media screen and (min-width: 576px) {
-      font-size: 13px;
-    }
-  }
-}
-// select
-
-// secondary-radio
-.secondary-radio {
-  width: 100%;
-  max-width: 132px;
-  max-height: 40px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-
-  @media screen and (min-width: 576px) {
-    display: none;
-  }
-
-  &__item {
-    width: 50%;
-    cursor: pointer;
-    padding: 7px 12px;
-    box-sizing: border-box;
-
-    &_left {
-      background-color: #15499f;
-      border: 1px solid #15499f;
-      border-bottom-left-radius: 8px;
-      border-top-left-radius: 8px;
-    }
-
-    &_right {
-      background-color: white;
-      border: 1px solid black;
-      border-bottom-right-radius: 8px;
-      border-top-right-radius: 8px;
-    }
-
-    &:hover {
-      transform: scale(1.05);
-      transition: 0.2s linear;
-    }
-
-    &:active {
-      border: 2px;
-    }
-  }
-
-  &__field {
-    display: none;
-  }
-
-  &__title {
-    font-weight: normal;
-
-    &_left {
-      color: white;
-    }
-  }
-}
-// secondary-radio
-
-// footer
-.footer {
-  width: 100%;
-  max-width: 1440px;
-  margin: 0 auto;
-  padding: 24px 24px 0;
-  background: #fafafa;
-  position: relative;
-
-  @media screen and (min-width: 1024px) {
-    padding: 40px 72px 16px;
-  }
-
-  &__body {
-    width: 100%;
-    flex: none;
-
-    @media screen and (min-width: 1024px) {
-      display: flex;
-      justify-content: space-between;
-      flex-wrap: wrap;
-    }
-  }
-
-  &__column {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    margin-bottom: 0px;
-
-    @media screen and (min-width: 1024px) {
-      margin-bottom: 80px;
-    }
-
-    &:nth-child(1) {
-      min-width: 200px;
-    }
-
-    &:nth-child(2) {
-      min-width: 200px;
-    }
-
-    &:nth-child(3) {
-      min-width: 270px;
-    }
-
-    &:nth-child(4) {
-      min-width: 135px;
-      margin-bottom: 32px;
-
-      @media screen and (min-width: 1299px) {
-        min-width: 200px;
-      }
-    }
-
-    &:nth-child(5) {
-      width: 100%;
-      margin-bottom: 0;
-      flex-direction: row;
-      justify-content: space-between;
-
-      @media screen and (min-width: 576px) {
-        justify-content: flex-start;
-      }
-
-      @media screen and (min-width: 1299px) {
-        min-width: 208px;
-        max-width: 232px;
-        flex-direction: column;
-      }
-
-      & a.footer__link_main {
-        display: none;
-
-        @media screen and (min-width: 1299px) {
-          display: block;
-        }
-      }
-    }
-  }
-
-  &__link {
-    text-decoration: none;
-    display: block;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-style: normal;
-    line-height: 24px;
-    color: #2f2f34;
-    margin-bottom: 16px;
-
-    &_main {
-      font-weight: bold;
-      font-size: 14px;
-
-      @media screen and (min-width: 1024px) {
-        font-size: 18px;
-      }
-    }
-
-    &_minor {
-      font-size: 14px;
-
-      @media screen and (min-width: 1024px) {
-        font-size: 16px;
-      }
-    }
-
-    &_hidden {
-      display: none;
-
-      @media screen and (min-width: 1024px) {
-        font-size: 16px;
-        line-height: 24px;
-        display: block;
-      }
-    }
-
-    &_main-hidden {
-      display: none;
-
-      @media screen and (min-width: 1024px) {
-        display: block;
-        font-weight: bold;
-        font-size: 18px;
-        line-height: 24px;
-      }
-    }
-
-    &_main-visible {
-      display: block;
-      font-weight: bold;
-      font-size: 14px;
-      line-height: 24px;
-
-      @media screen and (min-width: 1024px) {
-        display: none;
-      }
-    }
-
-    &_low {
-      color: #acadb1;
-      font-size: 11px;
-
-      @media screen and (min-width: 1024px) {
-        font-size: 14px;
-      }
-    }
-  }
-
-  &__visible {
-    width: 155px;
-    order: 2;
-
-    & li:nth-child(1) a {
-      margin-bottom: 0;
-
-      @media screen and (min-width: 1299px) {
-        margin-bottom: 16px;
-      }
-    }
-
-    @media screen and (min-width: 576px) {
-      min-width: 232px;
-    }
-
-    @media screen and (min-width: 1299px) {
-      min-width: 232px;
-      order: 0;
-    }
-  }
-
-  &__hidden {
-    display: none;
-
-    @media screen and (min-width: 1299px) {
-      display: block;
-      order: 1;
-    }
-  }
-
-  &__order {
-    order: 1;
-
-    @media screen and (min-width: 1299px) {
-      order: 3;
-    }
-  }
-
-  &__social-groups {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    width: 96px;
-    height: 24px;
-
-    @media screen and (min-width: 375px) {
-      justify-content: space-between;
-      width: 147.5px;
-    }
-
-    @media screen and (min-width: 576px) {
-      min-width: 222px;
-      margin-right: 63px;
-    }
-  }
-
-  &__icon {
-    width: 12px;
-    height: 12px;
-
-    @media screen and (min-width: 375px) {
-      width: 24px;
-      height: 24px;
-    }
-  }
-}
-// footer

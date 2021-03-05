@@ -1,0 +1,334 @@
+body {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 24px;
+  color: #28323c; }
+
+.main {
+  min-height: 110vh; }
+
+.top-block {
+  width: 100%;
+  max-width: 1440px;
+  margin: 0 auto;
+  height: 415px;
+  background-position: center center;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; }
+  @media screen and (min-width: 767px) {
+    .top-block {
+      height: 438px; } }
+  @media screen and (min-width: 1024px) {
+    .top-block {
+      height: 585px; } }
+  @media screen and (min-width: 1299px) {
+    .top-block {
+      height: 742px; } }
+  @media screen and (min-width: 1440px) {
+    .top-block {
+      height: 823px; } }
+  .top-block__container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 16px; }
+    @media screen and (min-width: 767px) {
+      .top-block__container {
+        padding-left: 72px; } }
+  .top-block__heading {
+    font-size: 18px;
+    line-height: 24px;
+    font-weight: bold;
+    color: white;
+    margin-bottom: 24px; }
+    @media screen and (min-width: 767px) {
+      .top-block__heading {
+        font-size: 34px;
+        line-height: 48px; } }
+    .top-block__heading_span {
+      font-size: inherit;
+      font-family: inherit;
+      font-weight: inherit;
+      line-height: inherit;
+      color: inherit;
+      display: block; }
+      @media screen and (min-width: 576px) {
+        .top-block__heading_span {
+          display: inline; } }
+  .top-block__offer {
+    width: 100%;
+    max-width: 435px;
+    font-size: 14px;
+    line-height: 24px;
+    font-weight: bold;
+    color: white;
+    margin-bottom: 24px; }
+    @media screen and (min-width: 767px) {
+      .top-block__offer {
+        font-size: 18px;
+        max-width: 620px; } }
+    .top-block__offer_span {
+      font-size: inherit;
+      font-family: inherit;
+      font-weight: inherit;
+      line-height: inherit;
+      color: inherit;
+      display: block; }
+  .top-block__buttons-block {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start; }
+  .top-block__button-container {
+    min-width: 219px; }
+    .top-block__button-container:first-child {
+      margin-right: 16px; }
+    .top-block__button-container:first-child .top-block__button {
+      background-color: #50287d;
+      color: white; }
+    .top-block__button-container:last-child .top-block__button {
+      display: none; }
+      @media screen and (min-width: 576px) {
+        .top-block__button-container:last-child .top-block__button {
+          background-color: #fff;
+          color: #50287d;
+          display: block; } }
+  .top-block__button:hover {
+    border: 2px solid #50287d;
+    box-shadow: 2px 2px 2px 2px #50287d; }
+
+.offer {
+  width: 100%;
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 48px 24px;
+  background: #f2f7fb; }
+  @media screen and (min-width: 1024px) {
+    .offer {
+      padding: 64px 72px; } }
+  .offer__container {
+    width: 100%;
+    margin: 0 auto;
+    padding-left: 8px;
+    padding-right: 8px;
+    box-sizing: border-box; }
+  .offer__row {
+    margin-left: -8px;
+    margin-right: -8px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap; }
+  .offer__column {
+    cursor: pointer;
+    flex: 0 0 100%;
+    max-width: 100%;
+    margin-bottom: 24px;
+    padding-right: 8px;
+    padding-left: 8px;
+    box-sizing: border-box; }
+    .offer__column:hover {
+      box-shadow: 0px 0px 8px rgba(43, 44, 54, 0.15), 0px 12px 16px rgba(43, 44, 54, 0.25); }
+    @media screen and (min-width: 576px) {
+      .offer__column {
+        flex: 0 0 50%;
+        max-width: 50%; } }
+    @media screen and (min-width: 767px) {
+      .offer__column {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        flex: 0 0 25%;
+        max-width: 25%; } }
+    .offer__column:hover {
+      box-shadow: 0px 12px 24px rgba(213, 224, 235, 0.25);
+      transform: scale(1.02);
+      opacity: 0.7; }
+    .offer__column:active .offer__box-link {
+      background-color: #14988b; }
+    .offer__column:active .offer__link {
+      color: white; }
+  .offer__wrapper {
+    width: 100%;
+    padding: 24px;
+    background: #ffffff;
+    border: 1px solid #e5e5e5;
+    border-bottom: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center; }
+    @media screen and (min-width: 767px) {
+      .offer__wrapper {
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: flex-start; } }
+  .offer__rates {
+    margin-bottom: 12px; }
+  .offer__title {
+    font-size: 18px;
+    line-height: 24px;
+    margin-bottom: 12px; }
+  .offer__rate {
+    font-size: 34px;
+    line-height: 48px; }
+  .offer__description {
+    display: none; }
+    @media screen and (min-width: 767px) {
+      .offer__description {
+        color: #90a4af;
+        display: block; } }
+  .offer__link-arrow {
+    display: block;
+    flex: none; }
+    @media screen and (min-width: 767px) {
+      .offer__link-arrow {
+        display: none; } }
+  .offer__box {
+    display: none;
+    padding: 15px 24px;
+    background-color: white;
+    border: 1px solid #e5e5e5;
+    border-top: none; }
+    @media screen and (min-width: 767px) {
+      .offer__box {
+        display: block; } }
+  .offer__link {
+    text-decoration: none;
+    color: #14988b; }
+
+.news {
+  width: 100%;
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 48px 24px;
+  background: #e5e5e5;
+  position: relative; }
+  @media screen and (min-width: 1024px) {
+    .news {
+      padding: 40px 72px 48px; } }
+  .news__heading {
+    font-size: 18px;
+    line-height: 24px;
+    font-weight: bold;
+    margin-bottom: 40px;
+    text-align: center; }
+  .news__container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    overflow-x: scroll; }
+    @media screen and (min-width: 1299px) {
+      .news__container {
+        overflow-x: hidden; } }
+  .news__tape {
+    min-width: 422px;
+    margin-left: 8px;
+    margin-right: 8px; }
+  .news__block {
+    width: 100%;
+    margin-bottom: 16px;
+    display: flex;
+    justify-content: space-between;
+    text-decoration: none; }
+    .news__block:hover {
+      transform: scale(1.02);
+      opacity: 0.7; }
+  .news__image {
+    width: 203px;
+    height: 184px;
+    margin-right: 16px;
+    background-size: cover;
+    background-position: center center; }
+  .news__sector {
+    width: 203px;
+    height: 184px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; }
+  .news__description {
+    font-size: 13px; }
+  .news__date {
+    font-size: 13px;
+    color: #90a4af; }
+  .news__pointer {
+    position: absolute;
+    top: 278px;
+    right: 11px; }
+
+.course {
+  min-width: 219px;
+  margin-right: 25px; }
+  @media screen and (min-width: 767px) {
+    .course {
+      margin-right: 109px; } }
+  .course__currency-rates {
+    width: 100%; }
+  .course__precious-metals {
+    width: 100%; }
+  .course__subtitle {
+    font-size: 18px;
+    line-height: 24px;
+    margin-bottom: 16px; }
+  .course__period-time {
+    font-size: 14px;
+    margin-bottom: 16px;
+    color: #acadb1; }
+  .course__block {
+    margin-bottom: 16px;
+    display: flex;
+    justify-content: space-between; }
+  .course__icon {
+    width: 8px;
+    height: 8px; }
+  .course__title {
+    font-size: 13px; }
+  .course__price {
+    font-size: 13px; }
+  .course__sector {
+    width: 46px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center; }
+  .course__link {
+    font-size: 13px;
+    margin-bottom: 16px;
+    text-decoration: none;
+    display: block;
+    color: #15499f; }
+    .course__link:hover {
+      transform: scaleY(1.1); }
+
+.pointer {
+  width: 48px;
+  height: 70px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  display: none; }
+  @media screen and (min-width: 576px) {
+    .pointer {
+      display: block; } }
+  .pointer:hover .pointer__circle {
+    transform: scale(1.05) rotate(360deg);
+    opacity: 0.7;
+    transition: all 0.2s linear; }
+  .pointer__circle {
+    width: 36px;
+    height: 36px;
+    background-position: center center;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px; }
+  .pointer__arrow {
+    width: 6px;
+    height: 12px; }
+  .pointer__more {
+    width: 48px;
+    height: 24px; }

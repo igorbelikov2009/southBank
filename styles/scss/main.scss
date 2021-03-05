@@ -1,0 +1,476 @@
+body {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 24px;
+  color: #28323c;
+}
+
+.main {
+  min-height: 110vh;
+}
+
+// top-block
+.top-block {
+  width: 100%;
+  max-width: 1440px;
+  margin: 0 auto;
+  height: 415px;
+  background-position: center center;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  @media screen and (min-width: 767px) {
+    height: 438px;
+  }
+
+  @media screen and (min-width: 1024px) {
+    height: 585px;
+  }
+
+  @media screen and (min-width: 1299px) {
+    height: 742px;
+  }
+
+  @media screen and (min-width: 1440px) {
+    height: 823px;
+  }
+
+  &__container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 16px;
+
+    @media screen and (min-width: 767px) {
+      padding-left: 72px;
+    }
+  }
+
+  &__heading {
+    font-size: 18px;
+    line-height: 24px;
+    font-weight: bold;
+    color: white;
+    margin-bottom: 24px;
+
+    @media screen and (min-width: 767px) {
+      font-size: 34px;
+      line-height: 48px;
+    }
+
+    &_span {
+      font-size: inherit;
+      font-family: inherit;
+      font-weight: inherit;
+      line-height: inherit;
+      color: inherit;
+      display: block;
+
+      @media screen and (min-width: 576px) {
+        display: inline;
+      }
+    }
+  }
+
+  &__offer {
+    width: 100%;
+    max-width: 435px;
+    font-size: 14px;
+    line-height: 24px;
+    font-weight: bold;
+    color: white;
+    margin-bottom: 24px;
+
+    @media screen and (min-width: 767px) {
+      font-size: 18px;
+      max-width: 620px;
+    }
+
+    &_span {
+      font-size: inherit;
+      font-family: inherit;
+      font-weight: inherit;
+      line-height: inherit;
+      color: inherit;
+      display: block;
+    }
+  }
+
+  &__buttons-block {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+  }
+
+  &__button-container {
+    min-width: 219px;
+
+    &:first-child {
+      margin-right: 16px;
+    }
+
+    &:first-child .top-block__button {
+      background-color: #50287d;
+      color: white;
+    }
+
+    &:last-child .top-block__button {
+      display: none;
+
+      @media screen and (min-width: 576px) {
+        background-color: #fff;
+        color: #50287d;
+        display: block;
+      }
+    }
+  }
+
+  &__button {
+    &:hover {
+      border: 2px solid #50287d;
+      box-shadow: 2px 2px 2px 2px #50287d;
+    }
+  }
+}
+// top-block
+
+// offer
+.offer {
+  width: 100%;
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 48px 24px;
+  background: #f2f7fb;
+
+  @media screen and (min-width: 1024px) {
+    padding: 64px 72px;
+  }
+
+  &__container {
+    width: 100%;
+    margin: 0 auto;
+    padding-left: 8px;
+    padding-right: 8px;
+    box-sizing: border-box;
+  }
+
+  &__row {
+    margin-left: -8px;
+    margin-right: -8px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+
+  &__column {
+    cursor: pointer;
+    flex: 0 0 100%;
+    max-width: 100%;
+    margin-bottom: 24px;
+    padding-right: 8px;
+    padding-left: 8px;
+    box-sizing: border-box;
+
+    &:hover {
+      box-shadow: 0px 0px 8px rgba(43, 44, 54, 0.15),
+        0px 12px 16px rgba(43, 44, 54, 0.25);
+    }
+
+    @media screen and (min-width: 576px) {
+      flex: 0 0 50%;
+      max-width: 50%;
+    }
+
+    @media screen and (min-width: 767px) {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      flex: 0 0 25%;
+      max-width: 25%;
+    }
+
+    &:hover {
+      box-shadow: 0px 12px 24px rgba(213, 224, 235, 0.25);
+      transform: scale(1.02);
+      opacity: 0.7;
+    }
+
+    &:active .offer__box-link {
+      background-color: #14988b;
+    }
+
+    &:active .offer__link {
+      color: white;
+    }
+  }
+
+  &__wrapper {
+    width: 100%;
+    padding: 24px;
+    background: #ffffff;
+    border: 1px solid #e5e5e5;
+    border-bottom: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    @media screen and (min-width: 767px) {
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: flex-start;
+    }
+  }
+
+  &__rates {
+    margin-bottom: 12px;
+  }
+
+  &__title {
+    font-size: 18px;
+    line-height: 24px;
+    margin-bottom: 12px;
+  }
+
+  &__rate {
+    font-size: 34px;
+    line-height: 48px;
+  }
+
+  &__description {
+    display: none;
+
+    @media screen and (min-width: 767px) {
+      color: #90a4af;
+      display: block;
+    }
+  }
+
+  &__link-arrow {
+    display: block;
+    flex: none;
+
+    @media screen and (min-width: 767px) {
+      display: none;
+    }
+  }
+
+  &__box {
+    display: none;
+    padding: 15px 24px;
+    background-color: white;
+    border: 1px solid #e5e5e5;
+    border-top: none;
+
+    @media screen and (min-width: 767px) {
+      display: block;
+    }
+  }
+
+  &__link {
+    text-decoration: none;
+    color: #14988b;
+  }
+}
+// offer
+
+// news
+.news {
+  width: 100%;
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 48px 24px;
+  background: #e5e5e5;
+  position: relative;
+
+  @media screen and (min-width: 1024px) {
+    padding: 40px 72px 48px;
+  }
+
+  &__heading {
+    font-size: 18px;
+    line-height: 24px;
+    font-weight: bold;
+    margin-bottom: 40px;
+    text-align: center;
+  }
+
+  &__container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    overflow-x: scroll;
+
+    @media screen and (min-width: 1299px) {
+      overflow-x: hidden;
+    }
+  }
+
+  &__tape {
+    min-width: 422px;
+    margin-left: 8px;
+    margin-right: 8px;
+  }
+
+  &__block {
+    width: 100%;
+    margin-bottom: 16px;
+    display: flex;
+    justify-content: space-between;
+    text-decoration: none;
+
+    &:hover {
+      transform: scale(1.02);
+      opacity: 0.7;
+    }
+  }
+
+  &__image {
+    width: 203px;
+    height: 184px;
+    margin-right: 16px;
+    background-size: cover;
+    background-position: center center;
+  }
+
+  &__sector {
+    width: 203px;
+    height: 184px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  &__description {
+    font-size: 13px;
+  }
+
+  &__date {
+    font-size: 13px;
+    color: #90a4af;
+  }
+
+  &__pointer {
+    position: absolute;
+    top: 278px;
+    right: 11px;
+  }
+}
+// news
+
+// course
+.course {
+  min-width: 219px;
+  margin-right: 25px;
+
+  @media screen and (min-width: 767px) {
+    margin-right: 109px;
+  }
+
+  &__currency-rates {
+    width: 100%;
+  }
+
+  &__precious-metals {
+    width: 100%;
+  }
+
+  &__subtitle {
+    font-size: 18px;
+    line-height: 24px;
+    margin-bottom: 16px;
+  }
+
+  &__period-time {
+    font-size: 14px;
+    margin-bottom: 16px;
+    color: #acadb1;
+  }
+
+  &__block {
+    margin-bottom: 16px;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__icon {
+    width: 8px;
+    height: 8px;
+  }
+
+  &__title {
+    font-size: 13px;
+  }
+
+  &__price {
+    font-size: 13px;
+  }
+
+  &__sector {
+    width: 46px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__link {
+    font-size: 13px;
+    margin-bottom: 16px;
+    text-decoration: none;
+    display: block;
+    color: #15499f;
+
+    &:hover {
+      transform: scaleY(1.1);
+    }
+  }
+}
+// course
+
+// pointer
+.pointer {
+  width: 48px;
+  height: 70px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  display: none;
+
+  @media screen and (min-width: 576px) {
+    display: block;
+  }
+
+  &:hover .pointer__circle {
+    transform: scale(1.05) rotate(360deg);
+    opacity: 0.7;
+    transition: all 0.2s linear;
+  }
+
+  &__circle {
+    width: 36px;
+    height: 36px;
+    background-position: center center;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+
+  &__arrow {
+    width: 6px;
+    height: 12px;
+  }
+
+  &__more {
+    width: 48px;
+    height: 24px;
+  }
+}
+// pointer

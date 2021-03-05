@@ -1,0 +1,308 @@
+body {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 24px;
+  color: #28323c;
+}
+
+.main {
+  min-height: 110vh;
+}
+
+// top-block
+.top-block {
+  width: 100%;
+  max-width: 1440px;
+  margin: 0 auto;
+  height: 400px;
+  background-position: center center;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  @media screen and (min-width: 1024px) {
+    height: 443px;
+  }
+
+  @media screen and (min-width: 1299px) {
+    height: 562px;
+  }
+
+  @media screen and (min-width: 1440px) {
+    height: 625px;
+  }
+
+  &__heading {
+    width: 100%;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 24px;
+    color: white;
+    margin-bottom: 24px;
+    padding-left: 24px;
+
+    @media screen and (min-width: 576px) {
+      font-size: 34px;
+      line-height: 48px;
+    }
+
+    @media screen and (min-width: 767px) {
+      padding-left: 72px;
+    }
+
+    @media screen and (min-width: 1299px) {
+      padding-left: 275px;
+    }
+
+    &_span {
+      font-size: inherit;
+      font-family: inherit;
+      font-weight: inherit;
+      line-height: inherit;
+      color: inherit;
+      display: block;
+
+      @media screen and (min-width: 767px) {
+        display: inline;
+      }
+    }
+  }
+
+  &__button-container {
+    width: 100%;
+    max-width: 200px;
+    margin-bottom: 36px;
+    margin-left: 24px;
+
+    @media screen and (min-width: 767px) {
+      margin-left: 72px;
+    }
+
+    @media screen and (min-width: 1299px) {
+      margin-left: 275px;
+    }
+  }
+}
+// top-block
+
+// spot
+.spot {
+  width: 100%;
+  max-width: 1440px;
+  margin: 0 auto;
+  background-color: #fff;
+  padding: 40px 24px 0;
+  display: none;
+
+  @media screen and (min-width: 767px) {
+    display: block;
+    padding: 40px 72px 40px;
+  }
+
+  &__nav {
+    display: none;
+
+    @media screen and (min-width: 767px) {
+      display: flex;
+      justify-content: space-between;
+      width: 300px;
+    }
+  }
+
+  &__link {
+    font-size: 14px;
+
+    &:nth-child(1),
+    &:nth-child(2) {
+      color: #15499f;
+      margin-right: 12px;
+
+      &::after {
+        content: url(../../assets/icons/polygon6Gray.svg);
+        width: 4px;
+        height: 8px;
+        margin-left: 12px;
+      }
+    }
+  }
+}
+// spot
+
+// deposits
+.deposits {
+  width: 100%;
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 16px 24px 48px;
+  background: #fff;
+  position: relative;
+
+  @media screen and (min-width: 1024px) {
+    padding: 16px 72px 60px;
+  }
+
+  &__row {
+    padding: 24px 0;
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: flex-start;
+
+    @media screen and (min-width: 576px) {
+      flex-direction: row;
+      padding-right: 24px;
+      border: 1px solid #e3e3e3;
+    }
+  }
+
+  &__image {
+    width: 100%;
+    aspect-ratio: 268 / 240;
+    margin-right: 0px;
+
+    @media screen and (min-width: 316px) {
+      aspect-ratio: none;
+      width: 268px;
+      height: 240px;
+    }
+
+    @media screen and (min-width: 576px) {
+      margin-right: 12px;
+    }
+
+    @media screen and (min-width: 1024px) {
+      margin-right: 34px;
+    }
+
+    @media screen and (min-width: 1299px) {
+      margin-right: 58px;
+    }
+  }
+
+  &__contribution {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  &__rate {
+    font-size: 18px;
+    margin-bottom: 12px;
+
+    @media screen and (min-width: 767px) {
+      font-size: 24px;
+      line-height: 36px;
+    }
+  }
+
+  &__clarification {
+    font-size: 14px;
+    margin-bottom: 12px;
+
+    @media screen and (min-width: 767px) {
+      font-size: 18px;
+    }
+  }
+
+  &__description {
+    display: none;
+
+    @media screen and (min-width: 1024px) {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+  }
+
+  &__sector {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  &__title {
+    font-size: 14px;
+    color: #acadb1;
+  }
+
+  &__item {
+    font-size: 16px;
+  }
+
+  &__link {
+    text-decoration: none;
+    color: #69a042;
+    margin-bottom: 12px;
+  }
+}
+// deposits
+
+// info
+.info {
+  width: 100%;
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 40px 24px 48px;
+  background: #fff;
+
+  @media screen and (min-width: 1024px) {
+    padding: 40px 72px 60px;
+  }
+
+  &__row {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+
+  &__column {
+    margin-bottom: 40px;
+  }
+
+  &__wrapper {
+    display: flex;
+    border-top: 4px solid #2c658e;
+  }
+
+  &__image {
+    width: calc(50% - 12px);
+    aspect-ratio: 311/ 544;
+    margin-right: 12px;
+
+    @media screen and (min-width: 416px) {
+      margin-right: 24px;
+    }
+  }
+
+  &__for-depositors {
+    width: calc(50% - 12px);
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__subtitle {
+    font-size: 13px;
+    margin-bottom: 12px;
+
+    @media screen and (min-width: 416px) {
+      font-size: 18px;
+      margin-bottom: 16px;
+    }
+  }
+
+  &__link {
+    text-decoration: none;
+    font-size: 13px;
+    color: #2b74b9;
+    margin-bottom: 12px;
+
+    @media screen and (min-width: 416px) {
+      font-size: 16px;
+      margin-bottom: 16px;
+    }
+  }
+}
+// info

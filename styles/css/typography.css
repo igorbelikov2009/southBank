@@ -3,24 +3,21 @@
   font-style: normal;
   font-weight: normal;
   font-size: 34px;
-  line-height: 48px;
-  color: #28323c; }
+  line-height: 48px; }
 
 .h2-font {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 18px;
-  line-height: 24px;
-  color: #28323c; }
+  line-height: 24px; }
 
 .h2-font-h1 {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 18px;
-  line-height: 24px;
-  color: #28323c; }
+  line-height: 24px; }
   @media screen and (min-width: 576px) {
     .h2-font-h1 {
       font-size: 34px;
@@ -31,24 +28,21 @@
   font-style: normal;
   font-weight: normal;
   font-size: 16px;
-  line-height: 24px;
-  color: #28323c; }
+  line-height: 24px; }
 
 .sm-font {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 13px;
-  line-height: 24px;
-  color: #28323c; }
+  line-height: 24px; }
 
 .sm-font-md {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 13px;
-  line-height: 24px;
-  color: #28323c; }
+  line-height: 24px; }
   @media screen and (min-width: 576px) {
     .sm-font-md {
       font-size: 16px; } }
@@ -59,8 +53,7 @@
   font-style: normal;
   font-weight: normal;
   font-size: 11px;
-  line-height: 24px;
-  color: #28323c; }
+  line-height: 24px; }
 
 .x-sm-font-sm {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -68,8 +61,7 @@
   font-style: normal;
   font-weight: normal;
   font-size: 11px;
-  line-height: 24px;
-  color: #28323c; }
+  line-height: 24px; }
   @media screen and (min-width: 576px) {
     .x-sm-font-sm {
       font-size: 13px;

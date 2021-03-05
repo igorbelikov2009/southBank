@@ -2,11 +2,12 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <link rel="stylesheet" href="../styles/css/reset.css" />
     <link rel="stylesheet" href="../styles/css/general.css" />
     <link rel="stylesheet" href="../styles/css/grids.css" />
-    <link rel="stylesheet" href="../styles/css/reset.css" />
     <link rel="stylesheet" href="../styles/css/typography.css" />
-    <link rel="stylesheet" href="../styles/css/southernMain.css" />
+    <link rel="stylesheet" href="../styles/css/headerLocationFooter.css" />
+    <link rel="stylesheet" href="../styles/css/main.css" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
@@ -24,54 +25,91 @@
             </div>
             <img
               class="header__logo"
-              src="../assets/logotype/southernMain/logotypeSouthern.svg"
+              src="../assets/logotype/logotypeSouthern.svg"
               alt=""
             />
           </div>
 
-          <!-- поле выбора  -->
-          <form
-            class="header__select select select_header"
-            action=""
-            method="post"
-          >
-            <label class="select__title-header sm-font" for="">
-              <select class="select__list-header sm-font" name="">
-                <option class="select__item-header sm-font" value="">
-                  Частным лицам
-                </option>
-                <option class="select__item-header sm-font" value="">
-                  Кредиты
-                </option>
-                <option class="select__item-header sm-font" value="">
-                  Ипотека
-                </option>
-                <option class="select__item-header sm-font" value="">
-                  Кассовое обслуживание
-                </option>
-                <option class="select__item-header sm-font" value="">
-                  Вклады
-                </option>
-                <option class="select__item-header sm-font" value="">
-                  Денежные переводы
-                </option>
-              </select>
-            </label>
-          </form>
-          <!-- поле выбора  -->
+          <!-- Частным лицам  -->
+          <!-- drop-down Выпадающее меню. -->
+          <div class="header__hidden">
+            <div class="drop-down">
+              <button class="header__drop-btn drop-down__button">
+                Частным лицам
+              </button>
+              <div class="drop-down__content">
+                <a class="header__link drop-down__link" href="#"
+                  >Кредитование</a
+                >
+                <a class="header__link drop-down__link" href="#"
+                  >Денежные переводы</a
+                >
+                <a class="header__link drop-down__link" href="#"
+                  >Сейфовые ячейки</a
+                >
 
-          <a class="header__link header__link_nav sm-font" href="">Бизнесу</a>
-          <a class="header__link header__link_nav sm-font" href="">О банке</a>
-          <a class="header__link header__link_nav sm-font" href="">Новости</a>
-          <a class="header__link header__link_nav sm-font" href=""
-            >Офисы и отделения</a
-          >
+                <a class="header__link drop-down__link" href="#">Ипотека</a>
 
+                <a class="header__link drop-down__link" href="#">Вклады</a>
+              </div>
+            </div>
+          </div>
+          <!-- drop-down Выпадающее меню. -->
+          <!-- Частным лицам  -->
+
+          <!-- Бизнесу -->
+          <!-- drop-down Выпадающее меню. -->
+          <div class="header__hidden">
+            <div class="drop-down">
+              <button class="header__drop-btn drop-down__button">
+                Бизнесу
+              </button>
+              <div class="drop-down__content">
+                <a class="header__link drop-down__link" href="#"
+                  >Кредиты бизнесу</a
+                >
+                <a class="header__link drop-down__link" href="#"
+                  >Зарплатные проекты</a
+                >
+                <a class="header__link drop-down__link" href="#"
+                  >Тарифы для юр. лиц</a
+                >
+                <a class="header__link drop-down__link" href="#"
+                  >Банк - клиент</a
+                >
+                <a class="header__link drop-down__link" href="#">Гарантии</a>
+              </div>
+            </div>
+          </div>
+          <!-- drop-down Выпадающее меню. -->
+          <!-- Бизнесу -->
+
+          <!-- О банке -->
+          <!-- drop-down Выпадающее меню. -->
+          <div class="header__hidden">
+            <div class="drop-down">
+              <button class="header__drop-btn drop-down__button">
+                О банке
+              </button>
+              <div class="drop-down__content">
+                <a class="header__link drop-down__link" href="#"
+                  >Офисы и отделения</a
+                >
+                <a class="header__link drop-down__link" href="#">Реквизиты</a>
+              </div>
+            </div>
+          </div>
+          <!-- drop-down Выпадающее меню. -->
+
+          <!-- О банке -->
+          <a class="header__hidden header__link" href="">Новости</a>
+
+          <a class="header__hidden header__link" href="">Офисы и отделения</a>
           <div class="header__authorization">
             <form class="header__form-search" action="">
               <img
                 class="header__icon header__icon_search"
-                src="../assets/icons/southernMain/searchIcon.svg"
+                src="../assets/icons/searchIcon.svg"
                 alt=""
               />
             </form>
@@ -79,10 +117,10 @@
             <a class="header__link header__link_login sm-font" href="">
               <img
                 class="header__icon header__icon_login"
-                src="../assets/icons/southernMain/userIcon.svg"
+                src="../assets/icons/userIcon.svg"
                 alt=""
               />
-              <div class="header__login sm-font">Личный кабинет</div>
+              <p class="header__login sm-font">Личный кабинет</p>
             </a>
           </div>
         </div>
@@ -92,26 +130,33 @@
       <!-- top-block -->
       <section
         class="top-block"
-        style="background-image: url(../assets/images/southernMain/jetty.jpg)"
+        style="background-image: url(../assets/images/main/jetty.jpg)"
       >
-        <div class="top-block__body">
-          <h1 class="top-block__heading h1-font">
+        <div class="top-block__container">
+          <h1 class="top-block__heading">
             Отпуск ближе,
-            <span class="top-block__heading_span h1-font">чем кажется</span>
+            <span class="top-block__heading_span">чем кажется</span>
           </h1>
-          <p class="top-block__offer h2-font">
+          <p class="top-block__offer">
             Планируете незабываемый отдых? Мы предлагаем оформить кредит
-            наличными по специальной ставке от 8 %
+            наличными по специальной ставке от 7,5%.
+            <span class="top-block__offer_span">
+              Онлайн решение за 1 минуту</span
+            >
           </p>
 
-          <form class="top-block__buttons" action="">
-            <button class="top-block__button top-block__button_left">
-              Оформить кредит
-            </button>
-            <button class="top-block__button top-block__button_right">
-              Калькулятор
-            </button>
-          </form>
+          <div class="top-block__buttons-block">
+            <div class="top-block__button-container">
+              <button class="top-block__button tertiary-button">
+                Оформить кредит
+              </button>
+            </div>
+            <div class="top-block__button-container">
+              <button class="top-block__button tertiary-button">
+                Калькулятор
+              </button>
+            </div>
+          </div>
         </div>
       </section>
       <!-- top-block -->
@@ -122,86 +167,74 @@
           <div class="offer__row">
             <div class="offer__column">
               <div class="offer__wrapper">
-                <div class="offer__rate">
-                  <p class="offer__title h2-font">Кредит</p>
-                  <p class="h1-font">от 8 %</p>
+                <div class="offer__ratess">
+                  <p class="offer__title">Кредит</p>
+                  <p class="offer__rate">от 8 %</p>
                 </div>
 
                 <p class="offer__description md-font">
                   Планируйте покупки, а о деньгах позаботимся мы
                 </p>
                 <a class="offer__link-arrow" href="">
-                  <img
-                    src="../assets/icons/southernMain/polygonGreen6.svg"
-                    alt=""
-                  />
+                  <img src="../assets/icons/polygonGreen6.svg" alt="" />
                 </a>
               </div>
-              <div class="offer__box-link">
-                <a class="offer__link md-font" href="">Подробнее</a>
+              <div class="offer__box">
+                <a class="offer__link" href="">Подробнее</a>
               </div>
             </div>
             <div class="offer__column">
               <div class="offer__wrapper">
-                <div class="offer__rate">
-                  <p class="offer__title h2-font">Ипотека</p>
-                  <p class="h1-font">от 7,9 %</p>
+                <div class="offer__rates">
+                  <p class="offer__title">Ипотека</p>
+                  <p class="offer__rate">от 7,9 %</p>
                 </div>
 
                 <p class="offer__description md-font">
                   Чем больше метров, тем ниже Ваша ставка
                 </p>
                 <a class="offer__link-arrow" href="">
-                  <img
-                    src="../assets/icons/southernMain/polygonGreen6.svg"
-                    alt=""
-                  />
+                  <img src="../assets/icons/polygonGreen6.svg" alt="" />
                 </a>
               </div>
-              <div class="offer__box-link">
-                <a class="offer__link md-font" href="">Подробнее</a>
+              <div class="offer__box">
+                <a class="offer__link" href="">Подробнее</a>
               </div>
             </div>
             <div class="offer__column">
               <div class="offer__wrapper">
-                <div class="offer__rate">
-                  <p class="offer__title h2-font">Вклады</p>
-                  <p class="h1-font">до 7 %</p>
+                <div class="offer__rates">
+                  <p class="offer__title">Вклады</p>
+                  <p class="offer__rate">до 7 %</p>
                 </div>
 
                 <p class="offer__description md-font">
                   Самый высокий доход по накопительному счёту
                 </p>
                 <a class="offer__link-arrow" href="">
-                  <img
-                    src="../assets/icons/southernMain/polygonGreen6.svg"
-                    alt=""
-                  />
+                  <img src="../assets/icons/polygonGreen6.svg" alt="" />
                 </a>
               </div>
-              <div class="offer__box-link">
-                <a class="offer__link md-font" href="">Подробнее</a>
+              <div class="offer__box">
+                <a class="offer__link" href="">Подробнее</a>
               </div>
             </div>
             <div class="offer__column">
               <div class="offer__wrapper">
-                <div class="offer__rate">
-                  <p class="offer__title h2-font">Переводы</p>
-                  <p class="h1-font">от 1 %</p>
+                <div class="offer__rates">
+                  <p class="offer__title">Переводы</p>
+                  <p class="offer__rate">от 1 %</p>
                 </div>
 
                 <p class="offer__description md-font">
                   Легкий и быстрый перевод по всему миру
                 </p>
                 <a class="offer__link-arrow" href="">
-                  <img
-                    src="../assets/icons/southernMain/polygonGreen6.svg"
-                    alt=""
-                  />
+                  <img src="../assets/icons/polygonGreen6.svg" alt="" />
                 </a>
               </div>
-              <div class="offer__box-link">
-                <a class="offer__link md-font" href="">Подробнее</a>
+              <div class="offer__box">
+                <a class="offer__link" href="">Подробнее</a>
               </div>
             </div>
           </div>
@@ -211,81 +244,82 @@
 
       <!-- news -->
       <section class="news">
-        <h1 class="news__heading h1-font">Новости</h1>
+        <h2 class="news__heading">Новости</h2>
         <div class="news__container">
-          <div class="course-currency__column course-currency">
-            <p class="course-currency__title h2-font">Курсы валют</p>
-            <p class="course-currency__time sm-font">На 10.03.2020, 20:00</p>
-            <div class="course-currency__price">
-              <p class="course-currency__price_item sm-font">USD</p>
-              <p class="course-currency__price_item sm-font">70,25</p>
-              <div class="course-currency__price_sector">
-                <p class="course-currency__price_item sm-font">70,50</p>
-                <img
-                  class="course-currency__price_icon"
-                  src="../assets/icons/southernMain/polygon4.svg"
-                  alt=""
-                />
+          <div class="course">
+            <div class="course__currency-rates">
+              <p class="course__subtitle">Курсы валют</p>
+              <p class="course__period-time">На 10.03.2020, 20:00</p>
+              <div class="course__block">
+                <p class="course__title">USD</p>
+                <p class="course__price">70,25</p>
+                <div class="course__sector">
+                  <p class="course__price">70,50</p>
+                  <img
+                    class="course__icon"
+                    src="../assets/icons/polygon4.svg"
+                    alt=""
+                  />
+                </div>
               </div>
-            </div>
-            <div class="course-currency__price sm-font">
-              <p class="course-currency__price_item sm-font">EUR</p>
-              <p class="course-currency__price_item sm-font">80,25</p>
-              <div class="course-currency__price_sector">
-                <p class="course-currency__price_item sm-font">83,70</p>
+              <div class="course__block">
+                <p class="course__title">EUR</p>
+                <p class="course__price">80,25</p>
+                <div class="course__sector">
+                  <p class="course__price">83,70</p>
 
-                <img
-                  class="course-currency__price_icon"
-                  src="../assets/icons/southernMain/polygon4.svg"
-                  alt=""
-                />
+                  <img
+                    class="course__icon"
+                    src="../assets/icons/polygon4.svg"
+                    alt=""
+                  />
+                </div>
               </div>
+              <a class="course__link" href="">Посмотреть все</a>
             </div>
-            <a class="course-currency__link sm-font" href="">Посмотреть все</a>
-            <p class="course-currency__title h2-font">Драгоценные металлы</p>
-            <p class="course-currency__time sm-font">На 10.03.2020, 20:00</p>
-            <div class="course-currency__price sm-font">
-              <p class="course-currency__price_item sm-font">Золото</p>
-              <p class="course-currency__price_item sm-font">
-                3 739,50 / 3 939,10
-              </p>
+            <div class="course__precious-metals">
+              <p class="course__subtitle">Драгоценные металлы</p>
+              <p class="course__period-time">На 10.03.2020, 20:00</p>
+              <div class="course__block">
+                <p class="course__price">Золото</p>
+                <p class="course__price">3 739,50 / 3 939,10</p>
+              </div>
+              <div class="course__block">
+                <p class="course__price">Серебро</p>
+                <p class="course__price">38,07 / 40,13</p>
+              </div>
+              <a class="course__link" href="">Посмотреть все</a>
             </div>
-            <div class="course-currency__price sm-font">
-              <p class="course-currency__price_item sm-font">Серебро</p>
-              <p class="course-currency__price_item sm-font">38,07 / 40,13</p>
-            </div>
-            <a class="course-currency__link sm-font" href="">Посмотреть все</a>
           </div>
           <div class="news__tape">
-            <a></a>
             <a href="" class="news__block">
               <div
                 class="news__image"
                 style="
-                  background-image: url(../assets/images/southernMain/rectangle10.jpg);
+                  background-image: url(../assets/images/main/rectangle10.jpg);
                 "
               ></div>
               <div class="news__sector">
-                <p class="news__description sm-font">
+                <p class="news__description">
                   Южный Банк сообщает об изменении режима работы в связи с
                   празднованием Международного женского дня
                 </p>
-                <p class="news__date sm-font">07.03.20</p>
+                <p class="news__date">07.03.20</p>
               </div>
             </a>
             <a href="" class="news__block">
               <div
                 class="news__image"
                 style="
-                  background-image: url(../assets/images/southernMain/rectangle11.jpg);
+                  background-image: url(../assets/images/main/rectangle11.jpg);
                 "
               ></div>
               <div class="news__sector">
-                <p class="news__description sm-font">
+                <p class="news__description">
                   Южный Банк поддержит финансово строительство школы в
                   Калинограде
                 </p>
-                <p class="news__date sm-font">05.03.20</p>
+                <p class="news__date">05.03.20</p>
               </div>
             </a>
           </div>
@@ -294,51 +328,45 @@
               <div
                 class="news__image"
                 style="
-                  background-image: url(../assets/images/southernMain/rectangle12.jpg);
+                  background-image: url(../assets/images/main/rectangle12.jpg);
                 "
               ></div>
               <div class="news__sector">
-                <p class="news__description sm-font">
+                <p class="news__description">
                   Южный Банк снижает ставки по кредитам наличными до 7,5%
                 </p>
-                <p class="news__date sm-font">05.03.20</p>
+                <p class="news__date">05.03.20</p>
               </div>
             </a>
             <a href="" class="news__block">
               <div
                 class="news__image"
                 style="
-                  background-image: url(../assets/images/southernMain/rectangle13.jpg);
+                  background-image: url(../assets/images/main/rectangle13.jpg);
                 "
               ></div>
               <div class="news__sector">
-                <p class="news__description sm-font">
+                <p class="news__description">
                   Южный Банк размещает однодневные облигации
                 </p>
-                <p class="news__date sm-font">03.03.20</p>
+                <p class="news__date">03.03.20</p>
               </div>
             </a>
           </div>
         </div>
         <!-- pointer -->
-        <a class="news__pointer pointer" href="">
+        <a class="news__pointer" href="">
           <div
             class="pointer__circle"
-            style="
-              background-image: url(../assets/icons/southernMain/ellipse6.svg);
-            "
+            style="background-image: url(../assets/icons/ellipse6.svg)"
           >
             <img
               class="pointer__arrow"
-              src="../assets/icons/southernMain/polygon6.svg"
+              src="../assets/icons/polygon6.svg"
               alt=""
             />
           </div>
-          <img
-            class="pointer__more"
-            src="../assets/icons/southernMain/esho.svg"
-            alt=""
-          />
+          <img class="pointer__more" src="../assets/icons/esho.svg" alt="" />
         </a>
         <!-- pointer -->
       </section>
@@ -346,85 +374,75 @@
 
       <!-- location -->
       <section class="location">
-        <h1 class="location__heading h2-font-h1">Офисы и отделения</h1>
+        <h1 class="location__heading">Офисы и отделения</h1>
         <div class="location__container">
           <div class="location__list">
             <div class="location__sector-select">
               <!-- поле выбора  -->
-              <form class="select select_city" action="" method="post">
-                <label class="select__title x-sm-font" for="">
-                  <select class="select__list" name="city">
-                    <option class="select__item" value="">Москва</option>
-                    <option class="select__item" value="">
-                      Санкт Петербург
-                    </option>
-                    <option class="select__item" value="">Казань</option>
-                    <option class="select__item" value="">
-                      Нижний Новгород
-                    </option>
-                    <option class="select__item" value="">Волгоград</option>
-                    <option class="select__item" value="">Камышин</option>
-                  </select>
-                </label>
-              </form>
+              <div class="location__city">
+                <form class="select" action="" method="post">
+                  <label>
+                    <select class="select__list" name="city">
+                      <option class="select__item" value="">Москва</option>
+                      <option class="select__item" value="">
+                        Санкт Петербург
+                      </option>
+                      <option class="select__item" value="">Казань</option>
+                      <option class="select__item" value="">
+                        Нижний Новгород
+                      </option>
+                      <option class="select__item" value="">Волгоград</option>
+                      <option class="select__item" value="">Камышин</option>
+                    </select>
+                  </label>
+                </form>
+              </div>
               <!-- поле выбора  -->
 
               <!-- поле выбора  -->
-              <form class="select select_area" action="" method="post">
-                <label class="select__title x-sm-font" for="">
-                  <select class="select__list" name="area">
-                    <option class="select__item" value="">Кузминки</option>
-                    <option class="select__item" value="">Некрасовка</option>
-                    <option class="select__item" value="">Люберцы</option>
-                    <option class="select__item" value="">Лефортово</option>
-                    <option class="select__item" value="">Дубровка</option>
-                    <option class="select__item" value="">
-                      Волгоградский проспект
-                    </option>
-                  </select>
-                </label>
-              </form>
+              <div class="location__area">
+                <form class="select" action="" method="post">
+                  <label>
+                    <select class="select__list" name="area">
+                      <option class="select__item" value="">Кузминки</option>
+                      <option class="select__item" value="">Некрасовка</option>
+                      <option class="select__item" value="">Люберцы</option>
+                      <option class="select__item" value="">Лефортово</option>
+                      <option class="select__item" value="">Дубровка</option>
+                      <option class="select__item" value="">
+                        Волгоградский проспект
+                      </option>
+                    </select>
+                  </label>
+                </form>
+              </div>
               <!-- поле выбора  -->
 
               <!-- переключатель secondary-radio -->
               <div class="location__radio secondary-radio">
-                <label
-                  class="secondary-radio__item secondary-radio__item_left"
-                  for=""
-                >
+                <label class="secondary-radio__item" for="">
                   <input
                     class="secondary-radio__field"
                     type="radio"
                     name="browser"
                     value="ie"
                   />
-                  <div
-                    class="secondary-radio__title secondary-radio__title_left sm-font"
-                  >
-                    Список
-                  </div>
+                  <div class="secondary-radio__title">Список</div>
                 </label>
 
-                <label
-                  class="secondary-radio__item secondary-radio__item_right"
-                  for=""
-                >
+                <label class="secondary-radio__item" for="">
                   <input
                     class="secondary-radio__field"
                     type="radio"
                     name="browser"
                     value="ie"
                   />
-                  <div
-                    class="secondary-radio__title secondary-radio__title_right sm-font"
-                  >
-                    Карта
-                  </div>
+                  <div class="secondary-radio__title">Карта</div>
                 </label>
               </div>
               <!-- переключатель secondary-radio -->
             </div>
-            <p class="location__address sm-font">
+            <p class="location__address">
               Партийный переулок д. 1, корп.7, стр. 2 <br />
               Ближайшие станции метро: <br />
               Добрынинская, Серпуховская <br />
@@ -432,7 +450,7 @@
               Режим работы офиса: <br />
               Пн - Чт: 9.30 - 17.30 Пт: 9.30 - 16.15
             </p>
-            <p class="location__address sm-font">
+            <p class="location__address">
               Большая Ордынка, д. 52 <br />
               Ближайшие станции метро: <br />
               Полянка, Третьяковская <br />
@@ -440,7 +458,7 @@
               Режим работы офиса: <br />
               Пн - Пт: 9.30 - 17.30
             </p>
-            <p class="location__address sm-font">
+            <p class="location__address">
               Ленинградский проспект, д. 80, корп. 16, 1 <br />
               этаж, 3 подъезд, пом I, оф.№№9-29 <br />
               Ближайшая станция метро: Сокол <br />
@@ -448,7 +466,7 @@
               Режим работы офиса: <br />
               Пн - Чт: 9.30 - 17.30 Пт: 9.30 - 16.15
             </p>
-            <p class="location__address sm-font">
+            <p class="location__address">
               тер. Внуково Аэропорт, д. 1, стр. 19 <br />
               (здание Почтово-грузового комплекса) <br />
               Телефон: +7(495) 956-17-34 <br />
@@ -457,13 +475,11 @@
             </p>
           </div>
           <div class="location__map-container">
-            <p class="location__map-title md-font">На карте</p>
+            <p class="location__map-title">На карте</p>
             <div class="location__map-block">
               <div
                 class="location__map"
-                style="
-                  background-image: url(../assets/images/southernGeneral/map.jpg);
-                "
+                style="background-image: url(../assets/images/general/map.jpg)"
               ></div>
             </div>
           </div>
@@ -477,25 +493,25 @@
           <ul class="footer__column">
             <a class="footer__link footer__link_main" href=""> Частным лицам</a>
             <li>
-              <a class="footer__link footer__link_minor" href="">
+              <a class="footer__link footer__link_hidden" href="">
                 Кредитование
               </a>
             </li>
             <li>
-              <a class="footer__link footer__link_minor" href="">
+              <a class="footer__link footer__link_hidden" href="">
                 Денежные переводы
               </a>
             </li>
             <li>
-              <a class="footer__link footer__link_minor" href="">
+              <a class="footer__link footer__link_hidden" href="">
                 Сейфовые ячейки
               </a>
             </li>
             <li>
-              <a class="footer__link footer__link_minor" href="">Ипотека</a>
+              <a class="footer__link footer__link_hidden" href="">Ипотека</a>
             </li>
             <li>
-              <a class="footer__link footer__link_minor" href="">Вклады</a>
+              <a class="footer__link footer__link_hidden" href="">Вклады</a>
             </li>
           </ul>
           <ul class="footer__column">
@@ -596,22 +612,22 @@
               <div class="footer__social-groups">
                 <img
                   class="footer__icon"
-                  src="../assets/icons/southernMain/facebook01.svg"
+                  src="../assets/icons/facebook01.svg"
                   alt=""
                 />
                 <img
                   class="footer__icon"
-                  src="../assets/icons/southernMain/instagram01.svg"
+                  src="../assets/icons/instagram01.svg"
                   alt=""
                 />
                 <img
                   class="footer__icon"
-                  src="../assets/icons/southernMain/twitter01.svg"
+                  src="../assets/icons/twitter01.svg"
                   alt=""
                 />
                 <img
                   class="footer__icon"
-                  src="../assets/icons/southernMain/facebook01.svg"
+                  src="../assets/icons/whatsapp01.svg"
                   alt=""
                 />
               </div>

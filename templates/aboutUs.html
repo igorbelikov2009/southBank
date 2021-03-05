@@ -2,10 +2,11 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <link rel="stylesheet" href="../styles/css/reset.css" />
     <link rel="stylesheet" href="../styles/css/general.css" />
     <link rel="stylesheet" href="../styles/css/grids.css" />
-    <link rel="stylesheet" href="../styles/css/reset.css" />
     <link rel="stylesheet" href="../styles/css/typography.css" />
+    <link rel="stylesheet" href="../styles/css/headerLocationFooter.css" />
     <link rel="stylesheet" href="../styles/css/aboutUs.css" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -24,54 +25,85 @@
             </div>
             <img
               class="header__logo"
-              src="../assets/logotype/southernMain/logotypeSouthern.svg"
+              src="../assets/logotype/logotypeSouthern.svg"
               alt=""
             />
           </div>
 
-          <!-- поле выбора  -->
-          <form
-            class="header__select select select_header"
-            action=""
-            method="post"
-          >
-            <label class="select__title-header sm-font" for="">
-              <select class="select__list-header sm-font" name="">
-                <option class="select__item-header sm-font" value="">
-                  Частным лицам
-                </option>
-                <option class="select__item-header sm-font" value="">
-                  Кредиты
-                </option>
-                <option class="select__item-header sm-font" value="">
-                  Ипотека
-                </option>
-                <option class="select__item-header sm-font" value="">
-                  Кассовое обслуживание
-                </option>
-                <option class="select__item-header sm-font" value="">
-                  Вклады
-                </option>
-                <option class="select__item-header sm-font" value="">
-                  Денежные переводы
-                </option>
-              </select>
-            </label>
-          </form>
-          <!-- поле выбора  -->
+          <!-- drop-down Выпадающее меню. -->
+          <div class="header__hidden">
+            <div class="drop-down">
+              <button class="header__drop-btn drop-down__button">
+                Частным лицам
+              </button>
+              <div class="drop-down__content">
+                <a class="header__link drop-down__link" href="#"
+                  >Кредитование</a
+                >
+                <a class="header__link drop-down__link" href="#"
+                  >Денежные переводы</a
+                >
+                <a class="header__link drop-down__link" href="#"
+                  >Сейфовые ячейки</a
+                >
 
-          <a class="header__link header__link_nav sm-font" href="">Бизнесу</a>
-          <a class="header__link header__link_nav sm-font" href="">О банке</a>
-          <a class="header__link header__link_nav sm-font" href="">Новости</a>
-          <a class="header__link header__link_nav sm-font" href=""
-            >Офисы и отделения</a
-          >
+                <a class="header__link drop-down__link" href="#">Ипотека</a>
 
+                <a class="header__link drop-down__link" href="#">Вклады</a>
+              </div>
+            </div>
+          </div>
+          <!-- drop-down Выпадающее меню. -->
+
+          <!-- drop-down Выпадающее меню. -->
+          <div class="header__hidden">
+            <div class="drop-down">
+              <button class="header__drop-btn drop-down__button">
+                Бизнесу
+              </button>
+              <div class="drop-down__content">
+                <a class="header__link drop-down__link" href="#"
+                  >Кредиты бизнесу</a
+                >
+                <a class="header__link drop-down__link" href="#"
+                  >Зарплатные проекты</a
+                >
+                <a class="header__link drop-down__link" href="#"
+                  >Тарифы для юр. лиц</a
+                >
+                <a class="header__link drop-down__link" href="#"
+                  >Банк - клиент</a
+                >
+                <a class="header__link drop-down__link" href="#">Гарантии</a>
+              </div>
+            </div>
+          </div>
+          <!-- drop-down Выпадающее меню. -->
+
+          <!-- drop-down Выпадающее меню. -->
+          <div class="header__hidden">
+            <div class="drop-down">
+              <button class="header__drop-btn drop-down__button">
+                О банке
+              </button>
+              <div class="drop-down__content">
+                <a class="header__link drop-down__link" href="#"
+                  >Офисы и отделения</a
+                >
+                <a class="header__link drop-down__link" href="#">Реквизиты</a>
+              </div>
+            </div>
+          </div>
+          <!-- drop-down Выпадающее меню. -->
+
+          <a class="header__hidden header__link" href="">Новости</a>
+
+          <a class="header__hidden header__link" href="">Офисы и отделения</a>
           <div class="header__authorization">
             <form class="header__form-search" action="">
               <img
                 class="header__icon header__icon_search"
-                src="../assets/icons/southernMain/searchIcon.svg"
+                src="../assets/icons/searchIcon.svg"
                 alt=""
               />
             </form>
@@ -79,10 +111,10 @@
             <a class="header__link header__link_login sm-font" href="">
               <img
                 class="header__icon header__icon_login"
-                src="../assets/icons/southernMain/userIcon.svg"
+                src="../assets/icons/userIcon.svg"
                 alt=""
               />
-              <div class="header__login sm-font">Личный кабинет</div>
+              <p class="header__login sm-font">Личный кабинет</p>
             </a>
           </div>
         </div>
@@ -99,7 +131,7 @@
           <span class="top-block__heading_span">любые вершины</span>
         </h1>
 
-        <form class="top-block__buttons" action="">
+        <form class="top-block__button-container" action="">
           <button class="tertiary-button">Всё о нашем банке</button>
         </form>
       </section>
@@ -123,12 +155,12 @@
         </p>
         <div class="about__images">
           <img
-            class="about__picture about__picture_primary"
+            class="about__picture"
             src="../assets/images/aboutUs/aboutUs02.jpg"
             alt=""
           />
           <img
-            class="about__picture about__picture_secondary"
+            class="about__picture"
             src="../assets/images/aboutUs/aboutUs03.jpg"
             alt=""
           />
@@ -148,11 +180,11 @@
           <div class="progress__block">
             <div
               class="progress__image"
-              style="background-image: url(../assets/icons/aboutUs/circle.svg)"
+              style="background-image: url(../assets/icons/circle.svg)"
             ></div>
             <img
               class="progress__picture"
-              src="../assets/icons/aboutUs/cup.svg"
+              src="../assets/icons/cup.svg"
               alt=""
             />
             <p class="progress__description">
@@ -163,11 +195,11 @@
           <div class="progress__block">
             <div
               class="progress__image"
-              style="background-image: url(../assets/icons/aboutUs/circle.svg)"
+              style="background-image: url(../assets/icons/circle.svg)"
             ></div>
             <img
               class="progress__picture"
-              src="../assets/icons/aboutUs/bank.svg"
+              src="../assets/icons/bank.svg"
               alt=""
             />
             <p class="progress__description">
@@ -177,11 +209,11 @@
           <div class="progress__block">
             <div
               class="progress__image"
-              style="background-image: url(../assets/icons/aboutUs/circle.svg)"
+              style="background-image: url(../assets/icons/circle.svg)"
             ></div>
             <img
               class="progress__picture"
-              src="../assets/icons/aboutUs/dollar.svg"
+              src="../assets/icons/dollar.svg"
               alt=""
             />
             <p class="progress__description">
@@ -191,11 +223,11 @@
           <div class="progress__block">
             <div
               class="progress__image"
-              style="background-image: url(../assets/icons/aboutUs/circle.svg)"
+              style="background-image: url(../assets/icons/circle.svg)"
             ></div>
             <img
               class="progress__picture"
-              src="../assets/icons/aboutUs/graph.svg"
+              src="../assets/icons/graph.svg"
               alt=""
             />
             <p class="progress__description">
@@ -327,85 +359,75 @@
 
       <!-- location -->
       <section class="location">
-        <h1 class="location__heading h2-font-h1">Офисы и отделения</h1>
+        <h1 class="location__heading">Офисы и отделения</h1>
         <div class="location__container">
           <div class="location__list">
             <div class="location__sector-select">
               <!-- поле выбора  -->
-              <form class="select select_city" action="" method="post">
-                <label class="select__title x-sm-font" for="">
-                  <select class="select__list" name="city">
-                    <option class="select__item" value="">Москва</option>
-                    <option class="select__item" value="">
-                      Санкт Петербург
-                    </option>
-                    <option class="select__item" value="">Казань</option>
-                    <option class="select__item" value="">
-                      Нижний Новгород
-                    </option>
-                    <option class="select__item" value="">Волгоград</option>
-                    <option class="select__item" value="">Камышин</option>
-                  </select>
-                </label>
-              </form>
+              <div class="location__city">
+                <form class="select" action="" method="post">
+                  <label>
+                    <select class="select__list" name="city">
+                      <option class="select__item" value="">Москва</option>
+                      <option class="select__item" value="">
+                        Санкт Петербург
+                      </option>
+                      <option class="select__item" value="">Казань</option>
+                      <option class="select__item" value="">
+                        Нижний Новгород
+                      </option>
+                      <option class="select__item" value="">Волгоград</option>
+                      <option class="select__item" value="">Камышин</option>
+                    </select>
+                  </label>
+                </form>
+              </div>
               <!-- поле выбора  -->
 
               <!-- поле выбора  -->
-              <form class="select select_area" action="" method="post">
-                <label class="select__title x-sm-font" for="">
-                  <select class="select__list" name="area">
-                    <option class="select__item" value="">Кузминки</option>
-                    <option class="select__item" value="">Некрасовка</option>
-                    <option class="select__item" value="">Люберцы</option>
-                    <option class="select__item" value="">Лефортово</option>
-                    <option class="select__item" value="">Дубровка</option>
-                    <option class="select__item" value="">
-                      Волгоградский проспект
-                    </option>
-                  </select>
-                </label>
-              </form>
+              <div class="location__area">
+                <form class="select" action="" method="post">
+                  <label>
+                    <select class="select__list" name="area">
+                      <option class="select__item" value="">Кузминки</option>
+                      <option class="select__item" value="">Некрасовка</option>
+                      <option class="select__item" value="">Люберцы</option>
+                      <option class="select__item" value="">Лефортово</option>
+                      <option class="select__item" value="">Дубровка</option>
+                      <option class="select__item" value="">
+                        Волгоградский проспект
+                      </option>
+                    </select>
+                  </label>
+                </form>
+              </div>
               <!-- поле выбора  -->
 
               <!-- переключатель secondary-radio -->
               <div class="location__radio secondary-radio">
-                <label
-                  class="secondary-radio__item secondary-radio__item_left"
-                  for=""
-                >
+                <label class="secondary-radio__item" for="">
                   <input
                     class="secondary-radio__field"
                     type="radio"
                     name="browser"
                     value="ie"
                   />
-                  <div
-                    class="secondary-radio__title secondary-radio__title_left sm-font"
-                  >
-                    Список
-                  </div>
+                  <div class="secondary-radio__title">Список</div>
                 </label>
 
-                <label
-                  class="secondary-radio__item secondary-radio__item_right"
-                  for=""
-                >
+                <label class="secondary-radio__item" for="">
                   <input
                     class="secondary-radio__field"
                     type="radio"
                     name="browser"
                     value="ie"
                   />
-                  <div
-                    class="secondary-radio__title secondary-radio__title_right sm-font"
-                  >
-                    Карта
-                  </div>
+                  <div class="secondary-radio__title">Карта</div>
                 </label>
               </div>
               <!-- переключатель secondary-radio -->
             </div>
-            <p class="location__address sm-font">
+            <p class="location__address">
               Партийный переулок д. 1, корп.7, стр. 2 <br />
               Ближайшие станции метро: <br />
               Добрынинская, Серпуховская <br />
@@ -413,7 +435,7 @@
               Режим работы офиса: <br />
               Пн - Чт: 9.30 - 17.30 Пт: 9.30 - 16.15
             </p>
-            <p class="location__address sm-font">
+            <p class="location__address">
               Большая Ордынка, д. 52 <br />
               Ближайшие станции метро: <br />
               Полянка, Третьяковская <br />
@@ -421,7 +443,7 @@
               Режим работы офиса: <br />
               Пн - Пт: 9.30 - 17.30
             </p>
-            <p class="location__address sm-font">
+            <p class="location__address">
               Ленинградский проспект, д. 80, корп. 16, 1 <br />
               этаж, 3 подъезд, пом I, оф.№№9-29 <br />
               Ближайшая станция метро: Сокол <br />
@@ -429,7 +451,7 @@
               Режим работы офиса: <br />
               Пн - Чт: 9.30 - 17.30 Пт: 9.30 - 16.15
             </p>
-            <p class="location__address sm-font">
+            <p class="location__address">
               тер. Внуково Аэропорт, д. 1, стр. 19 <br />
               (здание Почтово-грузового комплекса) <br />
               Телефон: +7(495) 956-17-34 <br />
@@ -438,13 +460,11 @@
             </p>
           </div>
           <div class="location__map-container">
-            <p class="location__map-title md-font">На карте</p>
+            <p class="location__map-title">На карте</p>
             <div class="location__map-block">
               <div
                 class="location__map"
-                style="
-                  background-image: url(../assets/images/southernGeneral/map.jpg);
-                "
+                style="background-image: url(../assets/images/general/map.jpg)"
               ></div>
             </div>
           </div>
@@ -577,22 +597,22 @@
               <div class="footer__social-groups">
                 <img
                   class="footer__icon"
-                  src="../assets/icons/southernMain/facebook01.svg"
+                  src="../assets/icons/facebook01.svg"
                   alt=""
                 />
                 <img
                   class="footer__icon"
-                  src="../assets/icons/southernMain/instagram01.svg"
+                  src="../assets/icons/instagram01.svg"
                   alt=""
                 />
                 <img
                   class="footer__icon"
-                  src="../assets/icons/southernMain/twitter01.svg"
+                  src="../assets/icons/twitter01.svg"
                   alt=""
                 />
                 <img
                   class="footer__icon"
-                  src="../assets/icons/southernMain/facebook01.svg"
+                  src="../assets/icons/whatsapp01.svg"
                   alt=""
                 />
               </div>
