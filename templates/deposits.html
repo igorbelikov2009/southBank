@@ -30,90 +30,60 @@
             />
           </div>
 
-          <!-- drop-down Выпадающее меню. -->
-          <div class="header__hidden">
-            <div class="drop-down">
-              <button class="header__drop-btn drop-down__button">
-                Частным лицам
-              </button>
-              <div class="drop-down__content">
-                <a class="header__link drop-down__link" href="#"
-                  >Кредитование</a
-                >
-                <a class="header__link drop-down__link" href="#"
-                  >Денежные переводы</a
-                >
-                <a class="header__link drop-down__link" href="#"
-                  >Сейфовые ячейки</a
-                >
+          <div class="header__column">
+            <button class="header__drop-down">Частным лицам</button>
+            <div class="header__content">
+              <a class="header__link" href="#">Кредитование</a>
+              <a class="header__link" href="#">Денежные переводы</a>
+              <a class="header__link" href="#">Сейфовые ячейки</a>
 
-                <a class="header__link drop-down__link" href="#">Ипотека</a>
+              <a class="header__link" href="#">Ипотека</a>
 
-                <a class="header__link drop-down__link" href="#">Вклады</a>
-              </div>
+              <a class="header__link" href="#">Вклады</a>
             </div>
           </div>
-          <!-- drop-down Выпадающее меню. -->
 
-          <!-- drop-down Выпадающее меню. -->
-          <div class="header__hidden">
-            <div class="drop-down">
-              <button class="header__drop-btn drop-down__button">
-                Бизнесу
-              </button>
-              <div class="drop-down__content">
-                <a class="header__link drop-down__link" href="#"
-                  >Кредиты бизнесу</a
-                >
-                <a class="header__link drop-down__link" href="#"
-                  >Зарплатные проекты</a
-                >
-                <a class="header__link drop-down__link" href="#"
-                  >Тарифы для юр. лиц</a
-                >
-                <a class="header__link drop-down__link" href="#"
-                  >Банк - клиент</a
-                >
-                <a class="header__link drop-down__link" href="#">Гарантии</a>
-              </div>
+          <div class="header__column">
+            <button class="header__drop-down">Бизнесу</button>
+            <div class="header__content">
+              <a class="header__link" href="#">Кредиты бизнесу</a>
+              <a class="header__link" href="#">Зарплатные проекты</a>
+              <a class="header__link" href="#">Тарифы для юр. лиц</a>
+              <a class="header__link" href="#">Банк - клиент</a>
+              <a class="header__link" href="#">Гарантии</a>
             </div>
           </div>
-          <!-- drop-down Выпадающее меню. -->
 
-          <!-- drop-down Выпадающее меню. -->
-          <div class="header__hidden">
-            <div class="drop-down">
-              <button class="header__drop-btn drop-down__button">
-                О банке
-              </button>
-              <div class="drop-down__content">
-                <a class="header__link drop-down__link" href="#"
-                  >Офисы и отделения</a
-                >
-                <a class="header__link drop-down__link" href="#">Реквизиты</a>
-              </div>
+          <div class="header__column">
+            <button class="header__drop-down">О банке</button>
+            <div class="header__content">
+              <a class="header__link" href="#">Офисы и отделения</a>
+              <a class="header__link" href="#">Реквизиты</a>
             </div>
           </div>
-          <!-- drop-down Выпадающее меню. -->
 
-          <a class="header__hidden header__link" href="">Новости</a>
-          <a class="header__hidden header__link" href="">Офисы и отделения</a>
-          <div class="header__authorization">
-            <form class="header__form-search" action="">
+          <div class="header__column">
+            <a class="header__link-main" href="#">Новости</a>
+          </div>
+
+          <div class="header__column">
+            <a class="header__link-main" href="#">Офисы и отделения</a>
+          </div>
+
+          <div class="header__auth">
+            <img
+              class="header__icon-search"
+              src="../assets/icons/searchIcon.svg"
+              alt=""
+            />
+
+            <a class="header__link-login" href="#">
               <img
-                class="header__icon header__icon_search"
-                src="../assets/icons/searchIcon.svg"
-                alt=""
-              />
-            </form>
-
-            <a class="header__link header__link_login sm-font" href="">
-              <img
-                class="header__icon header__icon_login"
+                class="header__icon-login"
                 src="../assets/icons/userIcon.svg"
                 alt=""
               />
-              <p class="header__login sm-font">Личный кабинет</p>
+              <p class="header__login">Личный кабинет</p>
             </a>
           </div>
         </div>
@@ -130,18 +100,18 @@
           <span class="top-block__heading_span">инвестиции</span>
         </h1>
 
-        <form class="top-block__button-container" action="">
+        <div class="top-block__button-container">
           <button class="tertiary-button">Подобрать вклад</button>
-        </form>
+        </div>
       </section>
       <!-- top-block -->
 
       <!-- spot -->
       <section class="spot">
         <div class="spot__nav">
-          <p class="spot__link">Главная</p>
-          <p class="spot__link">Частным лицам</p>
-          <p class="spot__link">Вклады</p>
+          <a class="spot__link" href="#">Главная</a>
+          <a class="spot__link" href="#">Частным лицам</a>
+          <a class="spot__link" href="#">Вклады</a>
         </div>
       </section>
       <!-- spot -->
@@ -177,7 +147,7 @@
                 <p class="deposits__item">пополняемый, со снятием</p>
               </div>
             </div>
-            <a class="deposits__link" href="">Ставки и условия</a>
+            <a class="deposits__link" href="#">Ставки и условия</a>
           </div>
         </div>
         <div class="deposits__row">
@@ -209,7 +179,7 @@
                 <p class="deposits__item">без пополнения и снятия</p>
               </div>
             </div>
-            <a class="deposits__link" href="">Ставки и условия</a>
+            <a class="deposits__link" href="#">Ставки и условия</a>
           </div>
         </div>
         <div class="deposits__row">
@@ -241,7 +211,7 @@
                 <p class="deposits__item">пополняемый, со снятием</p>
               </div>
             </div>
-            <a class="deposits__link" href="">Ставки и условия</a>
+            <a class="deposits__link" href="#">Ставки и условия</a>
           </div>
         </div>
         <div class="deposits__row">
@@ -273,7 +243,7 @@
                 <p class="deposits__item">пополняемый,со снятием</p>
               </div>
             </div>
-            <a class="deposits__link" href="">Ставки и условия</a>
+            <a class="deposits__link" href="#">Ставки и условия</a>
           </div>
         </div>
       </section>
@@ -292,12 +262,12 @@
 
               <div class="info__for-depositors">
                 <p class="info__subtitle">Информация для вкладчиков</p>
-                <a class="info__link" href="">Где открыть вклад</a>
-                <a class="info__link" href="">Страхование вкладов</a>
-                <a class="info__link" href="">Налогооблажение вкладов</a>
-                <a class="info__link" href="">Частые вопросы</a>
-                <a class="info__link" href="">Тарифы</a>
-                <a class="info__link" href="">Справки и выписки</a>
+                <a class="info__link" href="#">Где открыть вклад</a>
+                <a class="info__link" href="#">Страхование вкладов</a>
+                <a class="info__link" href="#">Налогооблажение вкладов</a>
+                <a class="info__link" href="#">Частые вопросы</a>
+                <a class="info__link" href="#">Тарифы</a>
+                <a class="info__link" href="#">Справки и выписки</a>
               </div>
             </div>
           </div>
@@ -312,9 +282,11 @@
 
               <div class="info__for-depositors">
                 <p class="info__subtitle">Сбережения</p>
-                <a class="info__link" href="">Металлические счета</a>
-                <a class="info__link" href="">Монеты из драгоценных металлов</a>
-                <a class="info__link" href="">Сейфовые ячейки</a>
+                <a class="info__link" href="#">Металлические счета</a>
+                <a class="info__link" href="#"
+                  >Монеты из драгоценных металлов</a
+                >
+                <a class="info__link" href="#">Сейфовые ячейки</a>
               </div>
             </div>
           </div>
@@ -330,7 +302,7 @@
             <div class="location__sector-select">
               <!-- поле выбора  -->
               <div class="location__city">
-                <form class="select" action="" method="post">
+                <div class="select">
                   <label>
                     <select class="select__list" name="city">
                       <option class="select__item" value="">Москва</option>
@@ -345,13 +317,13 @@
                       <option class="select__item" value="">Камышин</option>
                     </select>
                   </label>
-                </form>
+                </div>
               </div>
               <!-- поле выбора  -->
 
               <!-- поле выбора  -->
               <div class="location__area">
-                <form class="select" action="" method="post">
+                <div class="select">
                   <label>
                     <select class="select__list" name="area">
                       <option class="select__item" value="">Кузминки</option>
@@ -364,13 +336,13 @@
                       </option>
                     </select>
                   </label>
-                </form>
+                </div>
               </div>
               <!-- поле выбора  -->
 
               <!-- переключатель secondary-radio -->
               <div class="location__radio secondary-radio">
-                <label class="secondary-radio__item" for="">
+                <label class="secondary-radio__item">
                   <input
                     class="secondary-radio__field"
                     type="radio"
@@ -380,7 +352,7 @@
                   <div class="secondary-radio__title">Список</div>
                 </label>
 
-                <label class="secondary-radio__item" for="">
+                <label class="secondary-radio__item">
                   <input
                     class="secondary-radio__field"
                     type="radio"
@@ -408,6 +380,7 @@
               Режим работы офиса: <br />
               Пн - Пт: 9.30 - 17.30
             </p>
+
             <p class="location__address">
               Ленинградский проспект, д. 80, корп. 16, 1 <br />
               этаж, 3 подъезд, пом I, оф.№№9-29 <br />
@@ -441,148 +414,123 @@
       <footer class="footer">
         <div class="footer__body">
           <ul class="footer__column">
-            <a class="footer__link footer__link_main" href=""> Частным лицам</a>
-            <li>
-              <a class="footer__link footer__link_hidden" href="">
-                Кредитование
-              </a>
-            </li>
-            <li>
-              <a class="footer__link footer__link_hidden" href="">
-                Денежные переводы
-              </a>
-            </li>
-            <li>
-              <a class="footer__link footer__link_hidden" href="">
-                Сейфовые ячейки
-              </a>
-            </li>
-            <li>
-              <a class="footer__link footer__link_hidden" href="">Ипотека</a>
-            </li>
-            <li>
-              <a class="footer__link footer__link_hidden" href="">Вклады</a>
-            </li>
-          </ul>
-          <ul class="footer__column">
-            <a class="footer__link footer__link_main" href=""> Бизнесу</a>
-            <li>
-              <a class="footer__link footer__link_hidden" href=""
-                >Кредиты бизнесу</a
-              >
-            </li>
-            <li>
-              <a class="footer__link footer__link_hidden" href=""
-                >Зарплатные проекты</a
-              >
-            </li>
-            <li>
-              <a class="footer__link footer__link_hidden" href=""
-                >Тарифы для юр. лиц</a
-              >
-            </li>
-            <li>
-              <a class="footer__link footer__link_hidden" href=""
-                >Банк - клиент</a
-              >
-            </li>
-            <li>
-              <a class="footer__link footer__link_hidden" href="">Гарантии</a>
-            </li>
-          </ul>
-          <ul class="footer__column">
-            <a class="footer__link footer__link_main-hidden" href="">
-              Финансовым институтам</a
-            >
-            <a class="footer__link footer__link_main-visible" href=""
-              >Новости</a
-            >
-            <li>
-              <a class="footer__link footer__link_hidden" href=""
-                >Операции с ценными бумагами</a
-              >
-            </li>
-            <li>
-              <a class="footer__link footer__link_hidden" href=""
-                >Банкам-контрагентам</a
-              >
-            </li>
-            <li>
-              <a class="footer__link footer__link_hidden" href=""
-                >Сотрудничество</a
-              >
-            </li>
-          </ul>
-          <ul class="footer__column">
-            <a class="footer__link footer__link_main" href=""> Южный Банк</a>
-            <li>
-              <a class="footer__link footer__link_hidden" href="">О нас</a>
-            </li>
-            <li>
-              <a class="footer__link footer__link_hidden" href=""
-                >Офисы и отделения</a
-              >
-            </li>
-            <li>
-              <a class="footer__link footer__link_hidden" href="">Новости</a>
-            </li>
-            <li>
-              <a class="footer__link footer__link_hidden" href="">Реквизиты</a>
-            </li>
-          </ul>
-          <ul class="footer__column">
-            <a class="footer__link footer__link_main" href=""> Контакты</a>
-            <div class="footer__visible">
+            <a class="footer__link-main" href="#"> Частным лицам</a>
+            <div class="footer__seeing">
               <li>
-                <a class="footer__link footer__link_minor" href=""
-                  >8 (800) 980 62 62</a
-                >
+                <a class="footer__link" href="#"> Кредитование </a>
+              </li>
+              <li>
+                <a class="footer__link" href="#"> Денежные переводы </a>
+              </li>
+              <li>
+                <a class="footer__link" href="#"> Сейфовые ячейки </a>
+              </li>
+              <li>
+                <a class="footer__link" href="#">Ипотека</a>
+              </li>
+              <li>
+                <a class="footer__link" href="#">Вклады</a>
+              </li>
+            </div>
+          </ul>
+
+          <ul class="footer__column">
+            <a class="footer__link-main" href="#"> Бизнесу</a>
+            <div class="footer__seeing">
+              <li>
+                <a class="footer__link" href="#">Кредиты бизнесу</a>
+              </li>
+              <li>
+                <a class="footer__link" href="#">Зарплатные проекты</a>
+              </li>
+              <li>
+                <a class="footer__link" href="#">Тарифы для юр. лиц</a>
+              </li>
+              <li>
+                <a class="footer__link" href="#">Банк - клиент</a>
+              </li>
+              <li>
+                <a class="footer__link" href="#">Гарантии</a>
+              </li>
+            </div>
+          </ul>
+
+          <ul class="footer__column">
+            <a class="footer__link-main" href="#"> Финансовым институтам</a>
+            <div class="footer__seeing">
+              <li>
+                <a class="footer__link" href="#">Операции с ценными бумагами</a>
+              </li>
+              <li>
+                <a class="footer__link" href="#">Банкам-контрагентам</a>
+              </li>
+              <li>
+                <a class="footer__link" href="#">Сотрудничество</a>
+              </li>
+            </div>
+          </ul>
+
+          <ul class="footer__column">
+            <a class="footer__link-order" href="#">Новости</a>
+            <a class="footer__link-main" href="#"> Южный Банк</a>
+            <div class="footer__seeing">
+              <li>
+                <a class="footer__link" href="#">О нас</a>
+              </li>
+              <li>
+                <a class="footer__link" href="#">Офисы и отделения</a>
               </li>
 
               <li>
-                <a class="footer__link footer__link_low" href=""
-                  >Бесплатный звонок по России</a
-                >
+                <a class="footer__link" href="#">Реквизиты</a>
               </li>
             </div>
-            <div class="footer__hidden">
-              <li>
-                <a class="footer__link footer__link_minor" href=""
-                  >8 (495) 980 60 60</a
-                >
-              </li>
+          </ul>
 
-              <li>
-                <a class="footer__link footer__link_low" href=""
-                  >Для жителей Москвы и МО</a
-                >
-              </li>
+          <div class="footer__column">
+            <a class="footer__link-main" href="#"> Контакты</a>
+            <div class="footer__block">
+              <a class="footer__link" href="#">8 (800) 980 62 62</a>
+              <a class="footer__link" href="#">Бесплатный звонок по России</a>
             </div>
-            <li class="footer__order">
+            <div class="footer__block">
+              <a class="footer__link" href="#">8 (495) 980 60 60</a>
+
+              <a class="footer__link" href="#">Для жителей Москвы и МО</a>
+            </div>
+            <div class="footer__block">
               <div class="footer__social-groups">
-                <img
-                  class="footer__icon"
-                  src="../assets/icons/facebook01.svg"
-                  alt=""
-                />
-                <img
-                  class="footer__icon"
-                  src="../assets/icons/instagram01.svg"
-                  alt=""
-                />
-                <img
-                  class="footer__icon"
-                  src="../assets/icons/twitter01.svg"
-                  alt=""
-                />
-                <img
-                  class="footer__icon"
-                  src="../assets/icons/whatsapp01.svg"
-                  alt=""
-                />
+                <a href="#">
+                  <img
+                    class="footer__icon"
+                    src="../assets/icons/facebook01.svg"
+                    alt=""
+                  />
+                </a>
+                <a href="#">
+                  <img
+                    class="footer__icon"
+                    src="../assets/icons/instagram01.svg"
+                    alt=""
+                  />
+                </a>
+                <a href="#">
+                  <img
+                    class="footer__icon"
+                    src="../assets/icons/twitter01.svg"
+                    alt=""
+                  />
+                </a>
+                <a href="#">
+                  <img
+                    class="footer__icon"
+                    src="../assets/icons/whatsapp01.svg"
+                    alt=""
+                  />
+                </a>
               </div>
-            </li>
-          </ul>
+            </div>
+          </div>
         </div>
       </footer>
       <!-- footer -->
