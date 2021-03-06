@@ -112,6 +112,7 @@ body * {
         width: 300px;
         margin-bottom: 24px; } }
   .calculator__link {
+    text-decoration: none;
     font-size: 14px; }
     .calculator__link:nth-child(1), .calculator__link:nth-child(2) {
       color: #15499f;

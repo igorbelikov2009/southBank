@@ -94,10 +94,10 @@
       <section class="top-block">
         <div class="top-block__column">
           <div class="top-block__nav">
-            <p class="top-block__link">Главная</p>
-            <p class="top-block__link">Частным лицам</p>
-            <p class="top-block__link">Вклады</p>
-            <p class="top-block__link">Комфортный</p>
+            <a class="top-block__link" href="#">Главная</a>
+            <a class="top-block__link" href="#">Частным лицам</a>
+            <a class="top-block__link" href="#">Вклады</a>
+            <a class="top-block__link" href="#">Комфортный</a>
           </div>
           <h2 class="top-block__heading">Вклад “Комфортный”</h2>
           <p class="top-block__rate">Максимальная ставка</p>
@@ -138,7 +138,7 @@
           <div class="rates__block-switches">
             <!-- twin-switch -->
             <div class="rates__currency">
-              <form class="twin-switch">
+              <div class="twin-switch">
                 <label class="twin-switch__item">
                   <input
                     class="twin-switch__field"
@@ -158,13 +158,13 @@
                   />
                   <div class="twin-switch__title">$</div>
                 </label>
-              </form>
+              </div>
             </div>
             <!-- twin-switch -->
 
             <!-- twin-switch -->
             <div class="rates__capitalization">
-              <form class="twin-switch">
+              <div class="twin-switch">
                 <label class="twin-switch__item">
                   <input
                     class="twin-switch__field"
@@ -184,14 +184,14 @@
                   />
                   <div class="twin-switch__title">Без капитализации %</div>
                 </label>
-              </form>
+              </div>
             </div>
             <!-- twin-switch -->
           </div>
 
           <!-- twin-switch -->
           <div class="rates__package">
-            <form class="twin-switch">
+            <div class="twin-switch">
               <label class="twin-switch__item">
                 <input
                   class="twin-switch__field"
@@ -231,7 +231,7 @@
                 />
                 <div class="twin-switch__title">Максимум +</div>
               </label>
-            </form>
+            </div>
           </div>
           <!--  twin-switch -->
 
@@ -347,7 +347,7 @@
           <!-- twin-switch -->
           <div class="revenue__container">
             <p class="revenue__title">С пополнением</p>
-            <form class="twin-switch">
+            <div class="twin-switch">
               <label class="twin-switch__item">
                 <input
                   class="twin-switch__field"
@@ -367,7 +367,7 @@
                 />
                 <div class="twin-switch__title">Без пополнения</div>
               </label>
-            </form>
+            </div>
           </div>
           <!-- twin-switch -->
 
@@ -403,7 +403,7 @@
             <div class="location__sector-select">
               <!-- поле выбора  -->
               <div class="location__city">
-                <form class="select" action="" method="post">
+                <div class="select">
                   <label>
                     <select class="select__list" name="city">
                       <option class="select__item" value="">Москва</option>
@@ -418,13 +418,13 @@
                       <option class="select__item" value="">Камышин</option>
                     </select>
                   </label>
-                </form>
+                </div>
               </div>
               <!-- поле выбора  -->
 
               <!-- поле выбора  -->
               <div class="location__area">
-                <form class="select" action="" method="post">
+                <div class="select">
                   <label>
                     <select class="select__list" name="area">
                       <option class="select__item" value="">Кузминки</option>
@@ -437,13 +437,14 @@
                       </option>
                     </select>
                   </label>
-                </form>
+                </div>
               </div>
+
               <!-- поле выбора  -->
 
               <!-- переключатель secondary-radio -->
               <div class="location__radio secondary-radio">
-                <label class="secondary-radio__item" for="">
+                <label class="secondary-radio__item">
                   <input
                     class="secondary-radio__field"
                     type="radio"
@@ -453,7 +454,7 @@
                   <div class="secondary-radio__title">Список</div>
                 </label>
 
-                <label class="secondary-radio__item" for="">
+                <label class="secondary-radio__item">
                   <input
                     class="secondary-radio__field"
                     type="radio"

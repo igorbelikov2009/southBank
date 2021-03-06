@@ -124,17 +124,17 @@
       <!-- calculator -->
       <section class="calculator">
         <div class="calculator__nav">
-          <a class="calculator__link" href="">Главная</a>
-          <a class="calculator__link" href="">Частным лицам</a>
-          <a class="calculator__link" href="">Кредит</a>
+          <a class="calculator__link" href="#">Главная</a>
+          <a class="calculator__link" href="#">Частным лицам</a>
+          <a class="calculator__link" href="#">Кредит</a>
         </div>
         <h2 class="calculator__heading">Ипотечный калькулятор</h2>
 
         <div class="calculator__row">
           <div class="calculator__column">
             <!-- primary-radio -->
-            <form class="calculator__container">
-              <label class="primary-radio__item" for="">
+            <div class="calculator__container">
+              <label class="primary-radio__item">
                 <input
                   class="primary-radio__field"
                   type="radio"
@@ -144,7 +144,7 @@
                 <div class="primary-radio__title">Строящееся жильё</div>
               </label>
 
-              <label class="primary-radio__item" for="">
+              <label class="primary-radio__item">
                 <input
                   class="primary-radio__field"
                   type="radio"
@@ -154,7 +154,7 @@
                 <div class="primary-radio__title">Готовое жильё</div>
               </label>
 
-              <label class="primary-radio__item" for="">
+              <label class="primary-radio__item">
                 <input
                   class="primary-radio__field"
                   type="radio"
@@ -163,7 +163,7 @@
                 />
                 <div class="primary-radio__title">Рефинансирование</div>
               </label>
-            </form>
+            </div>
             <!-- primary-radio -->
 
             <!-- slider -->
@@ -230,7 +230,7 @@
           <div class="calculator__column">
             <div class="calculator__wrapper">
               <!-- checkbox -->
-              <label class="calculator__checkbox checkbox" for="">
+              <label class="calculator__checkbox checkbox">
                 <input class="checkbox__field" type="checkbox" атрибуты />
                 <p class="calculator__title-checkbox checkbox__title">
                   Использовать мат. капитал
@@ -339,11 +339,11 @@
       <section class="request">
         <div class="request__block">
           <div class="request__questions">
-            <a class="request__link" href="">Как получить?</a>
-            <a class="request__link" href="">Требования</a>
-            <a class="request__link" href="">Документы</a>
-            <a class="request__link" href="">Как погашать</a>
-            <a class="request__link" href="">Залоговая недвижимость</a>
+            <a class="request__link" href="#">Как получить?</a>
+            <a class="request__link" href="#">Требования</a>
+            <a class="request__link" href="#">Документы</a>
+            <a class="request__link" href="#">Как погашать</a>
+            <a class="request__link" href="#">Залоговая недвижимость</a>
           </div>
           <div class="request__line"></div>
         </div>
@@ -385,7 +385,7 @@
             <div class="location__sector-select">
               <!-- поле выбора  -->
               <div class="location__city">
-                <form class="select" action="" method="post">
+                <div class="select">
                   <label>
                     <select class="select__list" name="city">
                       <option class="select__item" value="">Москва</option>
@@ -400,13 +400,13 @@
                       <option class="select__item" value="">Камышин</option>
                     </select>
                   </label>
-                </form>
+                </div>
               </div>
               <!-- поле выбора  -->
 
               <!-- поле выбора  -->
               <div class="location__area">
-                <form class="select" action="" method="post">
+                <div class="select">
                   <label>
                     <select class="select__list" name="area">
                       <option class="select__item" value="">Кузминки</option>
@@ -419,13 +419,13 @@
                       </option>
                     </select>
                   </label>
-                </form>
+                </div>
               </div>
               <!-- поле выбора  -->
 
               <!-- переключатель secondary-radio -->
               <div class="location__radio secondary-radio">
-                <label class="secondary-radio__item" for="">
+                <label class="secondary-radio__item">
                   <input
                     class="secondary-radio__field"
                     type="radio"
@@ -435,7 +435,7 @@
                   <div class="secondary-radio__title">Список</div>
                 </label>
 
-                <label class="secondary-radio__item" for="">
+                <label class="secondary-radio__item">
                   <input
                     class="secondary-radio__field"
                     type="radio"
